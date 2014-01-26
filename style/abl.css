@@ -104,11 +104,8 @@ a.comment-edit-link { margin: 0; padding: 7px 10px; background: #fff; border: 1p
 .widget-area li.menu-item > a {position: relative;display: inline;margin: 0;padding: 0;border: none;}
 .widget-area input[type="text"] { width: 154px;}
 /* Tables, e.g. calendar, in sidebar*/
-/* @@@ABL clean up dups etc. below*/
 #main .widget-area table {margin: 10px 0;font-size: .9em;}
-#main .widget-area table td {padding: 7px 10px;border: 1px solid #ccc;vertical-align: top;}
 #main .widget-area table td {padding: 4px;border: 1px solid #ccc;vertical-align: top;}
-#main .widget-area table th {padding: 7px 10px;border: 1px solid #ccc;background: #eee;text-align: left;vertical-align: top;}
 #main .widget-area table th {padding: 4px;border: 1px solid #ccc;background: #eee;text-align: left;vertical-align: top;}
 
 /* Nav Footer */

@@ -11,9 +11,10 @@
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
 .mdd-menu li { display:none;}
-.mdd-menu li:first-child, .mdd-menu li:last-child { display: inline-block;}
-
+.mdd-menu li:first-child, .mdd-menu li:nth-child(2), .mdd-menu li:last-child { display: inline-block;}
+.mdd-menu a {letter-spacing: 0;}
 .mdd-menu .sub-nav { display: none;}
+
 .section.header h1 { font-size: 36px; line-height: 49px; margin-top: 77px;}
 .section.header form#searchform { right:auto; left:0; width: 100%;	}
 
