@@ -1,0 +1,8 @@
+/* For Internet Explorer 7 */
+.menu-item {display: inline-block;float: left;}
+.mainmenu .sub-nav {display: none;}
+.section.header form#searchform { width: 330px; }
+.section.header input[type="text"] { margin-left: 5px;
+padding-top: 14px;}
+.screen-reader-text { display: none;}
+.nav-links .button { width: 100px;}

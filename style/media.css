@@ -1,0 +1,57 @@
+/*** 7. Skeleton / ABL Media Queries ***/
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+.widget-area { padding-left: 7px;}
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+.mdd-menu li { display:none;}
+.mdd-menu li:first-child, .mdd-menu li:last-child { display: inline-block;}
+
+.mdd-menu .sub-nav { display: none;}
+.section.header h1 { font-size: 36px; line-height: 49px; margin-top: 77px;}
+.section.header form#searchform { right:auto; left:0; width: 100%;	}
+
+#respond p {margin: 0 0 14px 0;}
+#respond label { float: none; width: auto;text-align: left; }
+#respond input#submit {margin: 10px 0 15px 0;}
+#respond textarea {resize: vertical;width: 70%;line-height: 1.6;padding: 5px 10px;}
+#respond textarea {resize: vertical;width: 94%;line-height: 1.6;padding: 5px 10px;}
+
+.widget-area { padding-left: 0; margin-top: 21px;}
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.section.header  input[type="text"] {width: 290px;}
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+.section.header input[type="text"] {width: 190px;}
+}
+
+/*** 7. Print ***/
+@media print {
+  * {background: transparent !important;color: #000 !important;box-shadow: none !important;text-shadow: none !important;}
+  a, a:visited {text-decoration: underline;}
+  a[href]:after {content: " (" attr(href) ")";}
+  abbr[title]:after {content: " (" attr(title) ")";}
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {content: "";}
+  pre, blockquote {border: 1px solid #999;page-break-inside: avoid;}
+  thead {display: table-header-group; /* h5bp.com/t */}
+  tr, img {page-break-inside: avoid;}
+  img {max-width: 100% !important;}
+  @page {margin: 0.5cm;}
+  p, h2, h3 {orphans: 3;widows: 3;}
+  h2, h3 {page-break-after: avoid;}
+	
+	nav.menus, nav.secondary-menu, .widget-area { display: none;}
+}
+
+

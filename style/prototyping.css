@@ -1,0 +1,25 @@
+/* To overlay a grid or a mock-up over a page. From  http://www.css-101.org/articles/trick-for-rapid-prototyping/ */
+
+body::before {
+  content:"";
+  position:fixed;
+  background:url(grid.png) 50% 0;
+  z-index:1;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  opacity:.3;
+  pointer-events:none;
+}
+
+* {
+  -webkit-user-modify: read-write;
+  word-wrap: break-word;
+  -webkit-nbsp-mode: space;
+  -webkit-line-break: after-white-space;
+}
+
+a {
+  -webkit-user-modify: initial;
+}

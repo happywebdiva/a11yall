@@ -1,0 +1,118 @@
+/*** 6. ABL Style ***/
+
+/* General */
+.section { background: #f8f8f8;}
+blockquote { margin: 0 0 7px; padding: 12px 10px 7px 80px; background: #f8f8f8 url(../img/quote.png) 18px 14px no-repeat; border: 1px solid #ddd;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+
+/* Header */
+.section.header { background: #ddd; position: relative;}
+.section.header #skiptomain { position:absolute; top 0; left 0; padding: 5px 10px; background:#fff;}
+.section.header h1 { font-size: 42px; line-height: 56px; margin-bottom: 0; margin-top: 35px;}
+.section.header h1 a, .section.header h1 a:visited { color:#333;text-decoration: none;}
+.section.header h1 a:hover, .section.header h1 a:focus { color:#c00;}
+.section.header h2 { font-size: 14px; line-height: 21px; margin-bottom: 21px;}
+.section.header form#searchform { position: absolute; right: 0; top: 0; width: 320px; margin: 0; padding: 14px 0 0 0; background: #fff; /* fallback color */ background: rgba(0, 0, 0, 0.05); text-align: center; border-left: 1px solid #aaa; border-right: 1px solid #aaa; border-bottom: 1px solid #aaa;-webkit-border-bottom-right-radius: 5px;-webkit-border-bottom-left-radius: 5px;-moz-border-radius-bottomright: 5px;-moz-border-radius-bottomleft: 5px;border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;}
+.section.header form#searchform .button, .section.header form#searchform button, .section.header form#searchform input[type="submit"], .section.header form#searchform input[type="reset"], .section.header form#searchform input[type="button"] { margin-bottom: 16px; font-size: 12px;}
+.section.header input[type="text"] {width: 200px;max-width: none;display: inline; border: 1px solid #aaa; margin-right: 5px;}
+
+/* Navigation */
+nav select {display: none;}
+.section.mainmenu { background: #222;}
+nav.menus .sixteen.columns { background: #222;}
+nav.menus ul ul {box-shadow:3px 3px 3px -3px rgba(0,0,0,0.5); margin-left: 0;}
+/* Adobe's accessible mega menu CSS */    
+.mdd-menu {display: block;position: relative;margin: 0;padding: 0;list-style: none;z-index: 15;}
+.mdd-menu a {color: #ebebeb;text-decoration: none;text-transform: uppercase;letter-spacing: 0.08em;}
+.mdd-menu a:hover, .mdd-menu a:focus { background: #424242; border-bottom: 1px solid #fff;}
+.menu-item {display: inline-block;margin: 0;padding: 0;list-style: none;}
+.menu-item > a {position: relative;display: inline-block;margin: 0 0 -1px 0;padding: 11px 10px;border: 1px solid transparent;}
+.menu-item-has-children > a:focus,
+.menu-item-has-children > a.open {background-color: #424242;border-bottom: none;}
+/* sub-navigation panel */
+.sub-nav {position: absolute;display: none;top: 42px;margin-top: -1px;padding: 0;background-color: #424242;}
+.sub-nav.open {display: block;}
+.sub-nav ul {display: inline-block;vertical-align: top;margin: 0 1em 0 0;padding: 0;}
+.sub-nav li {display: block;margin: 0;padding: 0;border-bottom: 1px solid #666;list-style-type: none;}   
+.sub-nav li a {display:block;padding: 7px 14px;text-transform: none;}
+.sub-nav li a:hover { background: #222; border-bottom: 1px solid #666;}
+/* Optional: uncomment code below and add to your child theme to make last menu item not show for standard 960+ devices, e.g. to have a site map */
+/*.mdd-menu li:last-child { display:none;}*/
+
+/* Content */
+.section.middle { padding: 21px 0 35px; }
+#main { -ms-word-wrap: break-word; word-wrap: break-word;}
+#main h1 { font-size: 32px; line-height: 35px; }
+#main h2 { font-size: 28px; line-height: 35px; }
+#main h3 { font-size: 26px;}
+#main table {margin: 10px 0;font-size: .9em;}
+#main table td {padding: 7px 10px;border: 1px solid #ccc;vertical-align: top;}
+#main table th {padding: 7px 10px;border: 1px solid #ccc;background: #eee;text-align: left;vertical-align: top;}
+article { padding-bottom: 7px;}
+article.sticky { padding: 14px 28px; background: #eee; border: 1px solid #ddd;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+time.datehead { display: block; margin: 0 0 14px 0; font-size: 21px; line-height: 35px;}
+p.page-links { margin: 28px 0; font-weight: bold;}
+p.page-links a { padding: 6px 10px; border: 1px solid #ddd; background: #eee;}
+p.editlink { margin-top: 14px;}
+p.editlink a { text-decoration: none; font-weight: bold;}
+p.postmetadata { padding: 14px 28px;background: #f8f8f8;border: 1px solid #ddd;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+article.sticky p.postmetadata { background: #fff;}
+.nav-links .button { margin-right: 20px;}
+.nav-links a, .nav-links a:visited { text-decoration:none;}
+
+/* Comments */
+#commentblock { margin: 0;}
+#commentblock .comment-body { padding: 10px 30px; border: 1px solid #ddd; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+#commentblock ol { list-style: none;}
+#commentblock ol ol { list-style: decimal; }
+#commentblock ul.children > li { list-style: none;}
+#commentblock li { margin: 0 0 14px 0; padding: 0; }
+#commentblock .comment-author {padding: 14px 10px 3px 0;}
+#commentblock cite.fn { display: block; margin-top: 7px; font-style: normal;}
+#commentblock img.avatar { float: left; margin: 0 20px 0 0;border: 1px solid #ddd; -webkit-border-radius: 28px;-moz-border-radius: 28px;border-radius: 28px;}
+#commentblock .says {display: none;}
+#commentblock .commentmetadata {margin: 0 20px 21px 0; padding: 0 10px 14px 60px; border-bottom: 1px solid #ddd; font-size: .8em; color: #666;}
+#commentblock .reply {font-size: .8em; color: #666;}
+#commentblock ol { margin-left: 0; padding-left: 0;}
+#commentblock ul ul, #commentblock ul ol, #commentblock ol ol, #commentblock ol ul {margin: 0 30px 7px 30px;}
+#commentblock li li {background: none;margin: 0 0 14px 0;padding: 0;}
+#commentblock li ul.children li { margin-top: 14px;}
+#commentblock .bypostauthor {background: #eee;}
+#commentblock blockquote { border-color: #ddd; margin: 0 30px 7px 30px; background-color:#fff;}
+a.comment-edit-link { margin: 0; padding: 7px 10px; background: #fff; border: 1px solid #aaa; font-size: .8em; text-decoration: none; text-transform: uppercase;}
+
+#commentform {padding: 10px 30px; }
+#respond { margin: 0 21px 0 0; background: #eee; border: 1px solid #ddd; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+#respond p {margin: 0 0 14px 30px;}
+#respond h3 { margin: 14px 20px 0 30px;}
+#respond  input { width: 300px; padding: 4px 5px; border: 1px solid #ccc;}
+#respond label { float: left; width: 70px;text-align: right; padding: 0 10px 0 0;}
+#respond .comment-form-comment label {display: block;}
+#respond textarea {resize: vertical;width: 70%;line-height: 1.6;padding: 5px 10px;}
+#respond input#submit { position:relative; width: 150px; left: 0; margin: 10px 0 15px 80px; font-size: .9em;}
+#respond input#submit:hover { background: #000; color: #fff;}
+
+/* Sidebar */
+.widget-area { padding-left: 20px;}
+.widget-area aside { margin-bottom: 42px;}
+.widget-area a, .widget-area a:visited {color: #333;}
+.widget-area a:hover, .widget-area a:focus {color: #000;}
+.widget-area ul, .widget-area ol { margin-left: 0;}
+/* Reset sidebar menu so doesn't use main nav CSS */
+.widget-area ul.menu { margin-bottom: 14px; }
+.widget-area ul ul { margin: 7px 0 7px 15px;  }
+.widget-area li.menu-item {list-style: disc outside;display: list-item;margin: 0 0 14px 0;padding: 0;line-height: 21px;}
+.widget-area li.menu-item > a {position: relative;display: inline;margin: 0;padding: 0;border: none;}
+.widget-area input[type="text"] { width: 154px;}
+/* Tables, e.g. calendar, in sidebar*/
+/* @@@ABL clean up dups etc. below*/
+#main .widget-area table {margin: 10px 0;font-size: .9em;}
+#main .widget-area table td {padding: 7px 10px;border: 1px solid #ccc;vertical-align: top;}
+#main .widget-area table td {padding: 4px;border: 1px solid #ccc;vertical-align: top;}
+#main .widget-area table th {padding: 7px 10px;border: 1px solid #ccc;background: #eee;text-align: left;vertical-align: top;}
+#main .widget-area table th {padding: 4px;border: 1px solid #ccc;background: #eee;text-align: left;vertical-align: top;}
+
+/* Nav Footer */
+nav.menus.secondary ul li a { text-transform:none;}
+
+/* Footer */
+.section.footer { padding: 21px 0 14px; background: #ddd;}
