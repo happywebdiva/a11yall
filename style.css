@@ -28,6 +28,8 @@ SIGNIFICANT CHANGES this version
 - Changed screenshot
 - Updated version to 1.5
 - Deleted older version comments since can now see thru git or backup zip archive of 1/25
+- Cleanup of to do list and @@ code
+- For mobile, made nav three buttons and reduce letter spacing
 
 TO DO	
 	- Mobile
@@ -39,35 +41,27 @@ TO DO
 
 	- Do a11y check
 				- Review BAD site for ideas on what to double check
+				- validate theme
+				- consider integrating with Joe Dolson's plugin
+				- may need to repeat these steps again later
+	
+	- Expand and clean up functions.php
+		- Enable support for Post Thumbnails on posts and pages?
+		- Enable support for Post Formats?
+		- Setup the WordPress core custom background feature?
+
+	- run Theme Check plugin http://wordpress.org/extend/plugins/theme-check/
+	- tighten code by reducing php calls
+
+	- find or build an accessible contact form
 
 	- Get KS working again - see notes in  /abl-child-kitchensink/style.css
-	- Consider for KS - http://wp.tutsplus.com/tutorials/creative-coding/making-use-of-the-genericons-font-in-your-website/
+	- Consider Genericons Font for KS - http://wp.tutsplus.com/tutorials/creative-coding/making-use-of-the-genericons-font-in-your-website/
 	- get non-essential sytle over into kitchen sink
-	- go thru starter style.css and add more @@'s as needed
-		- OK to have wp_footer(); outside of div .container and <footer>? If not, alter KS footer.php too
-	- integrate in H5BP
-	- back this up by sending to twc/blog 
-	- test in IE7 
- 	- make responsive & html5 backwards compatible 
-	- clean up tabs file by file when brain dead
-	- tighten code by reducing php calls
 	- work on favicons -- how to get right according to parent or child themes -- overriding root too?
-	- move non-essential files to a library theme
-	- review all @@@ 
-	- validate theme
-	- run Theme Check plugin http://wordpress.org/extend/plugins/theme-check/
-	- find or build an accessible contact form
-	- go thru WCAG?
-	- consider integrating with Joe Dolson's plugin
+
 	- go thru /temp/styling.css to see if need all of this stuff, e.g. buttons
 	- compare with Genesis framework if I feel like it
-	- update jquery in .js
-	- test jquery to be sure fully functioning
-	
-	- move these files to new abl folder for ABL Parent Theme (consider name of this, e.g. maybe Ba11y for beautiful accessible)
-		- Do NOT change anything besides this file and folder name for moving out of dev
-		- For now dev version, collapse css and put in this file (style.css)
-		- Include a summary table of contents for style.css
 		
 	- when ready to do church child theme, go back to _s code (in abl_s theme) and check out inc/custom-header.php
 			There's also a very brief explanation of it in the README.md file
@@ -75,6 +69,13 @@ TO DO
 	
 	- set up a custom css with commented out things like limiting mobile nav to just two items
 	
+	LAST MINUTE
+	- Clean up @@ marked code
+	- Include a summary table of contents for style.css
+	- squish css together :-)
+	- update jquery in .js
+	- test jquery to be sure fully functioning
+
  */
  
 /* TO DO when using this theme
@@ -119,6 +120,7 @@ SITE LAUNCH
 
 DOCUMENTATION
 - How to do favicon and apple touch icon
+- How to hide last main menu item so shows only on mobile
 
 */
 
