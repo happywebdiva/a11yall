@@ -30,8 +30,11 @@ SIGNIFICANT CHANGES this version
 - Deleted older version comments since can now see thru git or backup zip archive of 1/25
 - Cleanup of to do list and @@ code
 - For mobile, made nav three buttons and reduce letter spacing
+- Switched position of IE conditional in header.php
 
 TO DO	
+	- Post switch of IE conditional, check site in IE7
+
 	- Mobile
 		- check in Android
 
