@@ -23,7 +23,7 @@ function a11yall_paging_nav() {
 endif;
 
 // Set up a sidebar widger
-function abl_widgets_init() {
+function a11y_widgets_init() {
 	register_sidebar( array(
   	'name' => 'Sidebar Widgets',
     'id'   => 'sidebar-widgets',
@@ -43,7 +43,7 @@ function abl_widgets_init() {
     'after_title'   => '</h3>'
    ));
 }
-add_action( 'widgets_init', 'abl_widgets_init' );
+add_action( 'widgets_init', 'a11y_widgets_init' );
 
 // Customize Excerpt from default [...] to ... Link to post/page
 function new_excerpt_more($more) {
@@ -53,13 +53,13 @@ function new_excerpt_more($more) {
 add_filter('excerpt_more', 'new_excerpt_more');
 
 // Start Theme Setup. 
-// Run abl_themesetup() to make various things possible when the 'after_setup_theme' hook is run. 
-add_action('after_setup_theme', 'abl_themesetup');
-function abl_themesetup() {
+// Run a11y_themesetup() to make various things possible when the 'after_setup_theme' hook is run. 
+add_action('after_setup_theme', 'a11y_themesetup');
+function a11y_themesetup() {
 	
 	// Make theme available for translation
 	// Translations can be filed in the /languages/ directory.
-	load_theme_textdomain( 'abltemp', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'a11yall', get_template_directory() . '/languages' );
 
 	// Adds RSS feed links to <head> for posts and comments.
 	add_theme_support( 'automatic-feed-links' );
@@ -80,7 +80,7 @@ function abl_themesetup() {
 	 * Code from _s
 	 */
 	// Setup the WordPress core custom background feature.
-	//add_theme_support( 'custom-background', apply_filters( 'abltemp_custom_background_args', array(
+	//add_theme_support( 'custom-background', apply_filters( 'a11yall_custom_background_args', array(
 	//	'default-color' => 'ffffff',
 	//	'default-image' => '',
 	//) ) );

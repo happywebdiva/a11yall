@@ -1,5 +1,5 @@
 /*
-Theme Name: ABL Dev Parent Theme
+Theme Name: All Y'all Parent Theme
 Theme URI: http: //www.faithandweb.com/
 Author: Anna Belle Leiserson
 Author URI: http: //www.faithandweb.com/
@@ -11,7 +11,7 @@ Text Domain: A11Yall
 Domain Path: /languages/
 Tags: Accessible, H5BP, @@@? (see http://wordpress.org/extend/themes/about for theme tags)
 
-ABL Parent Theme is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, Inc., and Adobe's Accessible Mega Menu (http://adobe-accessibility.github.io/Accessible-Mega-Menu/). Note that on small screens only the first and last menu items appear; consider making one of those two "Site Map."  On large screens only two levels of menu work for accessibility reasons.
+All Y'all Theme is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, Inc., and Adobe's Accessible Mega Menu (http://adobe-accessibility.github.io/Accessible-Mega-Menu/). Note that on small screens only the first and last menu items appear; consider making one of those two "Site Map."  On large screens only two levels of menu work for accessibility reasons.
 */
 
 @import url("style/normalize.css");    /* 1. Reset cross broswer */
