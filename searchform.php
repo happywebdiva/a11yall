@@ -1,6 +1,6 @@
 <?php
 /**
- * @package A11Yall
+ * @package a11yall
  */ 
 ?>
 <form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">

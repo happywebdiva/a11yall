@@ -1,6 +1,6 @@
 <?php
 /**
- * @package A11Yall
+ * @package a11yall
  */
 ?>
 <div class="widget-area" role="complementary">

@@ -1,6 +1,6 @@
 <?php
 /**
- * @package A11Yall
+ * @package a11yall
  */
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

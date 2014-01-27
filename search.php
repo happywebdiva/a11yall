@@ -1,6 +1,6 @@
 <?php
 /**
- * @package A11Yall
+ * @package a11yall
  *
  * search.php is for search results
  * Note: no sidebar
