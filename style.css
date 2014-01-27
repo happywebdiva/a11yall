@@ -31,48 +31,53 @@ SIGNIFICANT CHANGES this version
 - Cleanup of to do list and @@ code
 - For mobile, made nav three buttons and reduce letter spacing
 - Switched position of IE conditional in header.php
+- Getting rid of apple touch icons - moving to kitchen sink
 
 TO DO	
-	- Post switch of IE conditional, check site in IE7
 
-	- Mobile
-		- check in Android
-
-	- update apple touch icon -- make new image so not H5BP star (152x152px)
-		- test new icon on iphone
-	- Reduce CSS with http://www.456bereastreet.com/archive/201311/cutting_down_on_vendor_prefixes/
-
-	- Do a11y check
+- Do a11y check
 				- Review BAD site for ideas on what to double check
 				- validate theme
 				- consider integrating with Joe Dolson's plugin
 				- may need to repeat these steps again later
+
+- Improve jQuery call -- maybe figure out how to do in separate theme?
 	
-	- Expand and clean up functions.php
+- Make more ready for congregations & NVC - incorporating some of these ideas
+	- Like WebAIM, use magnifying glass icon instead of search button?
+	- Like Nomensa, have Facebook, Twitter, etc., in circles -- maybe use font icon for this?
+	- Like Heard Library, have upper right pulldown for Search | Members | A-Z Index
+	- Set up A-Z Index page that's automatically included with theme?
+
+- Set up a custom css with commented out things like limiting mobile nav to just two items
+		
+- Possibility: Reduce CSS with http://www.456bereastreet.com/archive/201311/cutting_down_on_vendor_prefixes/
+
+- Possibility: Apple Touch Icon
+	- <link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri() ?>/img/apple-touch-icon-precomposed.png">
+	- currently the image is in the images folder of kitchensink
+
+- Possibility: Expand and clean up functions.php
 		- Enable support for Post Thumbnails on posts and pages?
 		- Enable support for Post Formats?
 		- Setup the WordPress core custom background feature?
 
-	- run Theme Check plugin http://wordpress.org/extend/plugins/theme-check/
-	- tighten code by reducing php calls
+- Possibility: Find or build an accessible contact form
 
-	- find or build an accessible contact form
-
-	- Get KS working again - see notes in  /abl-child-kitchensink/style.css
+- Possibility: Get KS working again - see notes in  /abl-child-kitchensink/style.css
 	- Consider Genericons Font for KS - http://wp.tutsplus.com/tutorials/creative-coding/making-use-of-the-genericons-font-in-your-website/
 	- get non-essential sytle over into kitchen sink
 	- work on favicons -- how to get right according to parent or child themes -- overriding root too?
-
 	- go thru /temp/styling.css to see if need all of this stuff, e.g. buttons
 	- compare with Genesis framework if I feel like it
-		
-	- when ready to do church child theme, go back to _s code (in abl_s theme) and check out inc/custom-header.php
+
+- Possibility: when ready to do church child theme, go back to _s code (in abl_s theme) and check out inc/custom-header.php
 			There's also a very brief explanation of it in the README.md file
 			Might also look into abl_s/inc/template-tags.php
 	
-	- set up a custom css with commented out things like limiting mobile nav to just two items
-	
-	LAST MINUTE
+- LAST MINUTE
+	- run Theme Check plugin http://wordpress.org/extend/plugins/theme-check/
+	- tighten code by reducing php calls
 	- Clean up @@ marked code
 	- Include a summary table of contents for style.css
 	- squish css together :-)
