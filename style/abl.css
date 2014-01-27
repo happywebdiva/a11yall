@@ -94,6 +94,7 @@ a.comment-edit-link { margin: 0; padding: 7px 10px; background: #fff; border: 1p
 /* Sidebar */
 .widget-area { padding-left: 20px;}
 .widget-area aside { margin-bottom: 42px;}
+#main .widget-area h3 { font-size: 28px;}
 .widget-area a, .widget-area a:visited {color: #333;}
 .widget-area a:hover, .widget-area a:focus {color: #000;}
 .widget-area ul, .widget-area ol { margin-left: 0;}

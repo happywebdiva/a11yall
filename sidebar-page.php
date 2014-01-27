@@ -7,7 +7,7 @@
 	<h2 class="visuallyhidden">Sidebar</h2>
 	<?php if ( !dynamic_sidebar( 'Page Sidebar' ) ) : ?>
   	<aside id="archives" class="widget">
-      <h2>Pages</h2>
+      <h3>Pages</h3>
     	<ul>
       	<?php wp_list_pages('title_li=&depth=2&sort_column=menu_order'); ?>
       </ul>
