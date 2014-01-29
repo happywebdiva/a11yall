@@ -6,7 +6,7 @@
 <html class="no-js" <?php language_attributes(); ?>>
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>
 <?php	
 	// Detect whether usin Yoast's WordPress SEO Plugin and change title accordingly
