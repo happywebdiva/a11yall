@@ -9,7 +9,7 @@
   <h1 id="post-<?php the_ID(); ?>" class="<?php post_class(); ?>"><?php the_title(); ?></h1>
   </header>
   <p class="postmetadata">
-    Posted on <time datetime="<?php echo get_the_date(); ?>"><?php the_time('F j, Y') ?></time> by <?php the_author_link(); ?>
+    Posted on <time datetime="<?php echo date('Y-m-d'); ?>"><?php the_time('F j, Y') ?></time> by <?php the_author_link(); ?>
   </p>
   <div class="entry">
     <?php

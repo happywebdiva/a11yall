@@ -9,7 +9,7 @@
 	</header><!-- .entry-header -->
 
   <p class="postmetadata">
-    Posted on <time datetime="<?php echo get_the_date(); ?>"><?php the_time('F j, Y') ?></time>, by <?php the_author_link(); ?>
+    Posted on <time datetime="<?php echo echo date('Y-m-d'); ?>"><?php the_time('F j, Y') ?></time>, by <?php the_author_link(); ?>
   </p>
   <div class="entry">
     <?php

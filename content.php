@@ -5,7 +5,7 @@
 ?>
 
 <?php
-  echo '<time class="datehead">';
+  echo '<time datetime="' . date('Y-m-d') . '" class="datehead">';
   the_time('F j, Y');
   echo '</time>';
 ?>					

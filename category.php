@@ -11,7 +11,7 @@
       <hr />
     	<?php while ( have_posts() ) : the_post(); ?>
       	<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-        	<time class="datehead"><?php the_time('F j, Y'); ?></time>
+        	<time datetime="' . date('Y-m-d') . '" class="datehead"><?php the_time('F j, Y'); ?></time>
           <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
           <div class="entry">
           	<?php 
