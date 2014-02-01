@@ -6,7 +6,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-  <h1 id="post-<?php the_ID(); ?>" class="<?php post_class(); ?>"><?php the_title(); ?></h1>
+  <h1 id="post-<?php the_ID(); ?>"><?php the_title(); ?></h1>
   </header>
   <p class="postmetadata">
     Posted on <time datetime="<?php echo date('Y-m-d'); ?>"><?php the_time('F j, Y') ?></time> by <?php the_author_link(); ?>
