@@ -51,7 +51,7 @@
 				'container_class' => 'container menus',
 				'container_id' => 'site-navigation',
 				'menu_class' => 'mdd-menu',
-				'depth' => 2,
+				'depth' => 2
 			) );
     ?>
   </div>

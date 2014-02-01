@@ -90,7 +90,7 @@ function a11y_themesetup() {
 // Register menus
 register_nav_menus( array(
 	'primary' => __( 'Main Menu', 'a11yall' ),
-	'secondary' => __( 'Footer Menu', 'a11yall' ),
+	'secondary' => __( 'Footer Menu', 'a11yall' )
 ) );
 
 // Remove double spaces

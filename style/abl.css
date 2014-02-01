@@ -20,6 +20,10 @@ nav select {display: none;}
 .section.mainmenu { background: #222;}
 nav.menus .sixteen.columns { background: #222;}
 nav.menus ul ul {box-shadow:3px 3px 3px -3px rgba(0,0,0,0.5); margin-left: 0;}
+/* When menu not selected by admin, HTML5 nav is not renedered. Make so list in resulting div is okay */
+div.mdd-menu ul { margin-bottom: 0;}
+div.mdd-menu li {display: inline-block;margin: 0;padding: 0;list-style: none;padding: 11px 10px;}
+div.mdd-menu ul.children { display: none;}
 /* Adobe's accessible mega menu CSS */    
 .mdd-menu {display: block;position: relative;margin: 0;padding: 0;list-style: none;z-index: 15;}
 .mdd-menu a {color: #ebebeb;text-decoration: none;text-transform: uppercase;letter-spacing: 0.08em;}
