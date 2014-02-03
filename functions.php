@@ -45,13 +45,6 @@ function a11y_widgets_init() {
 }
 add_action( 'widgets_init', 'a11y_widgets_init' );
 
-// Customize Excerpt from default [...] to ... Link to post/page
-function new_excerpt_more($more) {
-	global $post;
-	return '... <a href="'. get_permalink($post->ID) . '">Read more</a>';
-}
-add_filter('excerpt_more', 'new_excerpt_more');
-
 // Start Theme Setup. 
 // Run a11y_themesetup() to make various things possible when the 'after_setup_theme' hook is run. 
 add_action('after_setup_theme', 'a11y_themesetup');
@@ -95,7 +88,7 @@ register_nav_menus( array(
 
 // Remove double spaces
 function remove_spaces($the_content) {
-return preg_replace( '/[\p{Z}\s]{2,}/u', ' ', $the_content );
+  return preg_replace( '/[\p{Z}\s]{2,}/u', ' ', $the_content );
 }
 add_filter('the_content', 'remove_spaces');
 
