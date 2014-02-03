@@ -92,4 +92,13 @@ function remove_spaces($the_content) {
 }
 add_filter('the_content', 'remove_spaces');
 
+// Make so null search does not take user back to home page
+function my_request_filter( $query_vars ) {
+    if( isset( $_GET['s'] ) && empty( $_GET['s'] ) ) {
+        $query_vars['s'] = " ";
+    }
+    return $query_vars;
+}
+add_filter( 'request', 'my_request_filter' );
+
 ?>
