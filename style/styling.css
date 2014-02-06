@@ -1,7 +1,7 @@
 /*** 4. Skeleton Base ***/
 
 /* #Basic Styles */
-body {background: #fff;font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;color: #444;-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+body {background: #fff;color: #444;font: 14px/21px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-weight: 300;-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;}
 
 /* #Typography */
