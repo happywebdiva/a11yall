@@ -7,10 +7,6 @@
 	<header class="entry-header">
     <h1 id="page-title"><?php the_title(); ?></h1>
 	</header><!-- .entry-header -->
-
-  <p class="postmetadata">
-    Posted on <time datetime="<?php echo date('Y-m-d'); ?>"><?php the_time('F j, Y') ?></time>, by <?php the_author_link(); ?>
-  </p>
   <div class="entry">
     <?php
       the_content();
