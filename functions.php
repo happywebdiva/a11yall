@@ -67,7 +67,7 @@ function a11y_themesetup() {
 
 	// Setup the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'a11yall_custom_background_args', array(
-		'default-color' => 'f5f5f5',
+		'default-color' => 'bbbbbb',
 		'default-image' => '',
 	) ) );
 
@@ -116,9 +116,8 @@ function my_request_filter( $query_vars ) {
 }
 add_filter( 'request', 'my_request_filter' );
 
-//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// Add custom header support
 add_theme_support( 'custom-header' );
-
 $header_defaults = array(
 	'default-image'          => '',
 	'random-default'         => false,
@@ -134,7 +133,6 @@ $header_defaults = array(
 	'admin-preview-callback' => '',
 );
 add_theme_support( 'custom-header', $header_defaults );
-
 $header_args = array(
 	'width'         => 125,
 	'height'        => 125,
