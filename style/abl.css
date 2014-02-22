@@ -4,19 +4,19 @@
 blockquote { margin: 0 0 7px; padding: 12px 10px 7px 80px; background: #f8f8f8 url(../img/quote.png) 18px 14px no-repeat; border: 1px solid #ddd;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
 
 /* Header */
-.section.header { position: relative; border-bottom: 7px solid #1eadcf;}
+.section.header { position: relative;}
 .section.header #skiptomain { position:absolute; top 0; left 0; padding: 5px 10px; background:#fff;}
 .section.header h1 { font-size: 42px; line-height: 56px; margin-bottom: 0; margin-top: 35px;}
 .section.header h1 a, .section.header h1 a:visited { color:#333;text-decoration: none;}
 .section.header h1 a:hover, .section.header h1 a:focus { color:#c00;}
-.section.header h2 { font-size: 14px; line-height: 21px; margin-bottom: 21px;}
+.section.header h2 { font-size: 16px; letter-spacing: 0.01em; line-height: 21px; margin-bottom: 21px;}
 .section.header form#searchform { position: absolute; right: 0; top: 0; width: 320px; margin: 0; padding: 14px 0 0 0; background: #fff; /* fallback color */ background: rgba(0, 0, 0, 0.05); text-align: center; border-left: 1px solid #aaa; border-right: 1px solid #aaa; border-bottom: 1px solid #aaa;-webkit-border-bottom-right-radius: 5px;-webkit-border-bottom-left-radius: 5px;-moz-border-radius-bottomright: 5px;-moz-border-radius-bottomleft: 5px;border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;}
 .section.header form#searchform .button, .section.header form#searchform button, .section.header form#searchform input[type="submit"], .section.header form#searchform input[type="reset"], .section.header form#searchform input[type="button"] { margin-bottom: 16px; font-size: 12px;}
 .section.header input[type="text"] {width: 200px;max-width: none;display: inline; border: 1px solid #aaa; margin-right: 5px;}
 
 /* Navigation */
 nav select {display: none;}
-.section.mainmenu { background: #444;}
+.section.mainmenu { background: #222; }
 nav.menus .sixteen.columns { background: #222;}
 nav.menus ul ul {box-shadow:3px 3px 3px -3px rgba(0,0,0,0.5); margin-left: 0;}
 /* When menu not selected by admin, HTML5 nav is not renedered. Make so list in resulting div is okay */
