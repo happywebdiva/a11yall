@@ -27,6 +27,10 @@ div.mdd-menu ul.children { display: none;}
 .mdd-menu {display: block;position: relative;margin: 0;padding: 0;list-style: none;z-index: 15;}
 .mdd-menu a {color: #ebebeb;text-decoration: none;text-transform: uppercase;letter-spacing: 0.08em;}
 .mdd-menu a:hover, .mdd-menu a:focus { background: #424242; border-bottom: 1px solid #fff;}
+
+.mdd-menu li.current-menu-item  a { background: #444;border-bottom: 1px solid #fff;}
+
+
 .menu-item {display: inline-block;margin: 0;padding: 0;list-style: none;}
 .menu-item > a {position: relative;display: inline-block;margin: 0 0 -1px 0;padding: 11px 10px;border: 1px solid transparent;}
 .menu-item-has-children > a:focus,
@@ -38,8 +42,8 @@ div.mdd-menu ul.children { display: none;}
 .sub-nav li {display: block;margin: 0;padding: 0;border-bottom: 1px solid #666;list-style-type: none;}   
 .sub-nav li a {display:block;padding: 7px 14px;text-transform: none;}
 .sub-nav li a:hover { background: #222; border-bottom: 1px solid #666;}
-/* Optional: uncomment code below and add to your child theme to make last menu item not show for standard 960+ devices, e.g. to have a site map */
-/*.mdd-menu li:last-child { display:none;}*/
+.mdd-menu li.current-menu-item .sub-nav a { border-bottom: 1px solid #666;}
+.mdd-menu .sub-nav li.current-menu-item a { background-color: #222; border-bottom: 1px solid #666;}
 
 /* Content */
 .section.middle { padding: 21px 0 35px; }
