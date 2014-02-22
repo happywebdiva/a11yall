@@ -6,6 +6,7 @@ blockquote { margin: 0 0 7px; padding: 12px 10px 7px 80px; background: #f8f8f8 u
 /* Header */
 .section.header { position: relative;}
 .section.header #skiptomain { position:absolute; top 0; left 0; padding: 5px 10px; background:#fff;}
+img#headerlogo {float: left; margin: 7px 20px 7px 0;}
 .section.header h1 { font-size: 42px; line-height: 56px; margin-bottom: 0; margin-top: 35px;}
 .section.header h1 a, .section.header h1 a:visited { color:#333;text-decoration: none;}
 .section.header h1 a:hover, .section.header h1 a:focus { color:#c00;}
