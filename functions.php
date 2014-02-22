@@ -57,6 +57,13 @@ function a11y_themesetup() {
 	// Adds RSS feed links to <head> for posts and comments.
 	add_theme_support( 'automatic-feed-links' );
 
+	// Setup the WordPress core custom background feature.
+	add_theme_support( 'custom-background', apply_filters( 'a11yall_custom_background_args', array(
+		'default-color' => 'f5f5f5',
+		'default-image' => '',
+	) ) );
+
+
 	/* ABL @@@@@ Consider doing this (code from _s)
 	 * Enable support for Post Thumbnails on posts and pages.
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
