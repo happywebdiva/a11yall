@@ -35,6 +35,7 @@
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
 .section.header input[type="text"] {width: 190px;}
+.section.mainmenu { font-size: 14px; }
 }
 
 /*** 7. Print ***/
