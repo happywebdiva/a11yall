@@ -77,7 +77,6 @@ article.sticky p.postmetadata { background: #fff;}
 #commentblock .commentmetadata {margin: 0 20px 21px 0; padding: 0 10px 14px 60px; border-bottom: 1px solid #ddd; border-color: rgba(0,0,0,0.15); font-size: .8em; color: #666;}
 #commentblock .reply {font-size: .8em; color: #666;}
 #commentblock ol { margin-left: 0; padding-left: 0;}
-#commentblock ul ul, #commentblock ul ol, #commentblock ol ol, #commentblock ol ul {margin: 0 30px 7px 30px;}
 #commentblock li li {background: none;margin: 0 0 14px 0;padding: 0;}
 #commentblock li ul.children li { margin-top: 14px;}
 #commentblock .bypostauthor {background: #eee; background: rgba(0,0,0,0.05);}
@@ -85,7 +84,7 @@ article.sticky p.postmetadata { background: #fff;}
 a.comment-edit-link { margin: 0; padding: 7px 10px; background: #fff; border: 1px solid #aaa;font-size: .8em; text-decoration: none; text-transform: uppercase;}
 
 #commentform {padding: 10px 30px; }
-#respond { margin: 0 21px 0 0; background: #eee;background: rgba(0,0,0,0.05); border: 1px solid #ddd;border-color: rgba(0,0,0,0.15); -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+#respond { margin: 0; background: #eee;background: rgba(0,0,0,0.05); border: 1px solid #ddd;border-color: rgba(0,0,0,0.15); -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
 #respond p {margin: 0 0 14px 30px;}
 #respond h3 { margin: 14px 20px 0 30px;}
 #respond  input { width: 300px; padding: 4px 5px; border: 1px solid #ccc;border-color: rgba(0,0,0,0.15);}
