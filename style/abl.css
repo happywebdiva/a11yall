@@ -27,10 +27,7 @@ div.mdd-menu ul.children { display: none;}
 .mdd-menu {display: block;position: relative;margin: 0;padding: 0;list-style: none;z-index: 15;}
 .mdd-menu a {color: #ebebeb;text-decoration: none;text-transform: uppercase;letter-spacing: 0.08em;}
 .mdd-menu a:hover, .mdd-menu a:focus { background: #424242; border-bottom: 1px solid #fff;}
-
 .mdd-menu li.current-menu-item  a { background: #444;border-bottom: 1px solid #fff;}
-
-
 .menu-item {display: inline-block;margin: 0;padding: 0;list-style: none;}
 .menu-item > a {position: relative;display: inline-block;margin: 0 0 -1px 0;padding: 11px 10px;border: 1px solid transparent;}
 .menu-item-has-children > a:focus,
@@ -46,7 +43,7 @@ div.mdd-menu ul.children { display: none;}
 .mdd-menu .sub-nav li.current-menu-item a { background-color: #222; border-bottom: 1px solid #666;}
 
 /* Content */
-.section.middle { padding: 21px 0 35px; }
+.section.middle .container { padding: 21px 0 35px 0;background: rgb(255, 255, 255); background: rgba(255, 255, 255, .9);}
 #main { -ms-word-wrap: break-word; word-wrap: break-word;}
 #main h1 { font-size: 32px; line-height: 35px; }
 #main h2 { font-size: 28px; line-height: 35px; }
@@ -54,9 +51,9 @@ div.mdd-menu ul.children { display: none;}
 #main table {margin: 10px 0;font-size: .9em;}
 #main table td {padding: 7px 10px;border: 1px solid #ccc;vertical-align: top;}
 #main table th {padding: 7px 10px;border: 1px solid #ccc;background: #eee;text-align: left;vertical-align: top;}
-article { padding-bottom: 7px;}
-article.sticky { padding: 14px 28px; background: #eee; border: 1px solid #ddd;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
-time.datehead { display: block; margin: 0 0 14px 0; font-size: 21px; line-height: 35px;}
+article.hentry {margin: 0 10px 14px 20px;}
+article.sticky { padding: 14px 28px; margin-left: 10px; background: #eee; background: rgba(0, 0, 0, .04);border: 1px solid #ddd;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+time.datehead { display: block; margin: 0 0 14px 10px; font-size: 21px; line-height: 35px;}
 p.page-links { margin: 28px 0; font-weight: bold;}
 p.page-links a { padding: 6px 10px; border: 1px solid #ddd; background: #eee;}
 p.editlink { margin-top: 14px;}
@@ -99,8 +96,7 @@ a.comment-edit-link { margin: 0; padding: 7px 10px; background: #fff; border: 1p
 #respond input#submit:hover { background: #000; color: #fff;}
 
 /* Sidebar */
-.widget-area { padding-left: 20px;}
-.widget-area aside { margin-bottom: 42px;}
+.widget-area aside { margin: 0 0 42px 20px;}
 #main .widget-area h3 { font-size: 28px;}
 .widget-area a, .widget-area a:visited {color: #333;}
 .widget-area a:hover, .widget-area a:focus {color: #000;}
@@ -120,4 +116,4 @@ a.comment-edit-link { margin: 0; padding: 7px 10px; background: #fff; border: 1p
 nav.menus.secondary ul li a { text-transform:none;}
 
 /* Footer */
-.section.footer { padding: 21px 0 14px; background: #ddd;}
+.section.footer { padding: 21px 0 14px;}
