@@ -1,4 +1,12 @@
 <?php
+// Activate jQuery
+function add_jquery() {
+  if (!is_admin()) {
+	 wp_enqueue_script('jquery');
+  }
+}
+add_action('init', 'add_jquery');
+
 // Display navigation to next/previous set of posts when applicable.
 if ( ! function_exists( 'a11yall_paging_nav' ) ) :
 function a11yall_paging_nav() {
