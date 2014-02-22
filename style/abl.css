@@ -5,13 +5,14 @@ blockquote { margin: 0 0 7px; padding: 12px 10px 7px 80px; background: #f8f8f8 u
 
 /* Header */
 .section.header { position: relative;}
+.section.header .container { background: #f5f5f5; background: rgba(255, 255, 255, .8);}
 .section.header #skiptomain { position:absolute; top 0; left 0; padding: 5px 10px; background:#fff;}
 img#headerlogo {float: left; margin: 7px 20px 7px 0;}
-.section.header h1 { font-size: 42px; line-height: 56px; margin-bottom: 0; margin-top: 35px;}
+.section.header h1 { font-size: 42px; line-height: 56px; margin: 35px 0 0 10px;}
 .section.header h1 a, .section.header h1 a:visited { color:#333;text-decoration: none;}
 .section.header h1 a:hover, .section.header h1 a:focus { color:#c00;}
-.section.header h2 { font-size: 16px; letter-spacing: 0.01em; line-height: 21px; margin-bottom: 21px;}
-.section.header form#searchform { position: absolute; right: 0; top: 0; width: 320px; margin: 0; padding: 14px 0 0 0; background: #fff; /* fallback color */ background: rgba(0, 0, 0, 0.05); text-align: center; border-left: 1px solid #aaa; border-right: 1px solid #aaa; border-bottom: 1px solid #aaa;-webkit-border-bottom-right-radius: 5px;-webkit-border-bottom-left-radius: 5px;-moz-border-radius-bottomright: 5px;-moz-border-radius-bottomleft: 5px;border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; border-color: rgba(0,0,0,0.15);}
+.section.header h2 { font-size: 16px; letter-spacing: 0.01em; line-height: 21px; margin: 0 0 21px 10px;}
+.section.header form#searchform { position: absolute; right: 0; top: 0; width: 320px; margin: 0 10px; padding: 14px 0 0 0; background: #fff; /* fallback color */ background: rgba(0, 0, 0, 0.05); text-align: center; border-left: 1px solid #aaa; border-right: 1px solid #aaa; border-bottom: 1px solid #aaa;-webkit-border-bottom-right-radius: 5px;-webkit-border-bottom-left-radius: 5px;-moz-border-radius-bottomright: 5px;-moz-border-radius-bottomleft: 5px;border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; border-color: rgba(0,0,0,0.15);}
 .section.header form#searchform .button, .section.header form#searchform button, .section.header form#searchform input[type="submit"], .section.header form#searchform input[type="reset"], .section.header form#searchform input[type="button"] { margin-bottom: 16px; font-size: 12px;}
 .section.header input[type="text"] {width: 200px;max-width: none;display: inline; border: 1px solid #aaa; margin-right: 5px; border-color: rgba(0,0,0,0.3);}
 
@@ -44,7 +45,7 @@ div.mdd-menu ul.children { display: none;}
 .mdd-menu .sub-nav li.current-menu-item a { background-color: #222; border-bottom: 1px solid #666;}
 
 /* Content */
-.section.middle .container { padding: 21px 0 35px 0;background: rgb(255, 255, 255); background: rgba(255, 255, 255, .9);}
+.section.middle .container { padding: 21px 0 35px 0;background: #f5f5f5; background: rgba(255, 255, 255, .9);}
 #main { -ms-word-wrap: break-word; word-wrap: break-word;}
 #main h1 { font-size: 32px; line-height: 35px; }
 #main h2 { font-size: 28px; line-height: 35px; }
@@ -61,6 +62,7 @@ p.editlink { margin-top: 14px;}
 p.editlink a { text-decoration: none; font-weight: bold;}
 p.postmetadata { padding: 14px 28px;background: #f8f8f8; background:rgba(0,0,0,0.03);border: 1px solid #ddd;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;border-color: rgba(0,0,0,0.15);}
 article.sticky p.postmetadata { background: #fff;}
+.nav-links { margin-left: 20px;}
 .nav-links .button { margin-right: 20px;}
 .nav-links a, .nav-links a:visited { text-decoration:none;}
 
@@ -116,4 +118,5 @@ a.comment-edit-link { margin: 0; padding: 7px 10px; background: #fff; border: 1p
 nav.menus.secondary ul li a { text-transform:none;}
 
 /* Footer */
-.section.footer { padding: 21px 0 14px;}
+.section.footer .container { padding: 21px 0 14px; background: #f5f5f5; background: rgba(255, 255, 255, .9);}
+.section.footer p { margin-left: 20px;}
