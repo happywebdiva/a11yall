@@ -1,7 +1,7 @@
 /*** 6. ABL Style ***/
 
 /* General */
-blockquote { margin: 0 0 7px; padding: 12px 10px 7px 80px; background: #f8f8f8 url(../img/quote.png) 18px 14px no-repeat; border: 1px solid #ddd;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+blockquote { margin: 0 0 7px; padding: 12px 10px 7px 80px; background: #f8f8f8 url(../img/quote.png) 18px 14px no-repeat; background-color:rgba(0,0,0,0.02);; border: 1px solid #ddd;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; border-color: rgba(0,0,0,0.1);}
 
 /* Header */
 .section.header { position: relative;}
@@ -10,9 +10,9 @@ blockquote { margin: 0 0 7px; padding: 12px 10px 7px 80px; background: #f8f8f8 u
 .section.header h1 a, .section.header h1 a:visited { color:#333;text-decoration: none;}
 .section.header h1 a:hover, .section.header h1 a:focus { color:#c00;}
 .section.header h2 { font-size: 16px; letter-spacing: 0.01em; line-height: 21px; margin-bottom: 21px;}
-.section.header form#searchform { position: absolute; right: 0; top: 0; width: 320px; margin: 0; padding: 14px 0 0 0; background: #fff; /* fallback color */ background: rgba(0, 0, 0, 0.05); text-align: center; border-left: 1px solid #aaa; border-right: 1px solid #aaa; border-bottom: 1px solid #aaa;-webkit-border-bottom-right-radius: 5px;-webkit-border-bottom-left-radius: 5px;-moz-border-radius-bottomright: 5px;-moz-border-radius-bottomleft: 5px;border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;}
+.section.header form#searchform { position: absolute; right: 0; top: 0; width: 320px; margin: 0; padding: 14px 0 0 0; background: #fff; /* fallback color */ background: rgba(0, 0, 0, 0.05); text-align: center; border-left: 1px solid #aaa; border-right: 1px solid #aaa; border-bottom: 1px solid #aaa;-webkit-border-bottom-right-radius: 5px;-webkit-border-bottom-left-radius: 5px;-moz-border-radius-bottomright: 5px;-moz-border-radius-bottomleft: 5px;border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; border-color: rgba(0,0,0,0.15);}
 .section.header form#searchform .button, .section.header form#searchform button, .section.header form#searchform input[type="submit"], .section.header form#searchform input[type="reset"], .section.header form#searchform input[type="button"] { margin-bottom: 16px; font-size: 12px;}
-.section.header input[type="text"] {width: 200px;max-width: none;display: inline; border: 1px solid #aaa; margin-right: 5px;}
+.section.header input[type="text"] {width: 200px;max-width: none;display: inline; border: 1px solid #aaa; margin-right: 5px; border-color: rgba(0,0,0,0.3);}
 
 /* Navigation */
 nav select {display: none;}
@@ -52,43 +52,43 @@ div.mdd-menu ul.children { display: none;}
 #main table td {padding: 7px 10px;border: 1px solid #ccc;vertical-align: top;}
 #main table th {padding: 7px 10px;border: 1px solid #ccc;background: #eee;text-align: left;vertical-align: top;}
 article.hentry {margin: 0 10px 14px 20px;}
-article.sticky { padding: 14px 28px; margin-left: 10px; background: #eee; background: rgba(0, 0, 0, .04);border: 1px solid #ddd;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+article.sticky { padding: 14px 28px; margin-left: 10px; background: #eee; background: rgba(0, 0, 0, .04);border: 1px solid #ddd;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;border-color: rgba(0,0,0,0.15);}
 time.datehead { display: block; margin: 0 0 14px 10px; font-size: 21px; line-height: 35px;}
 p.page-links { margin: 28px 0; font-weight: bold;}
 p.page-links a { padding: 6px 10px; border: 1px solid #ddd; background: #eee;}
 p.editlink { margin-top: 14px;}
 p.editlink a { text-decoration: none; font-weight: bold;}
-p.postmetadata { padding: 14px 28px;background: #f8f8f8;border: 1px solid #ddd;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+p.postmetadata { padding: 14px 28px;background: #f8f8f8; background:rgba(0,0,0,0.03);border: 1px solid #ddd;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;border-color: rgba(0,0,0,0.15);}
 article.sticky p.postmetadata { background: #fff;}
 .nav-links .button { margin-right: 20px;}
 .nav-links a, .nav-links a:visited { text-decoration:none;}
 
 /* Comments */
-#commentblock { margin: 0;}
-#commentblock .comment-body { padding: 10px 30px; border: 1px solid #ddd; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+#commentblock { margin: 0 0 0 20px;}
+#commentblock .comment-body { padding: 10px 30px; border: 1px solid #ddd; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;border-color: rgba(0,0,0,0.15);}
 #commentblock ol { list-style: none;}
 #commentblock ol ol { list-style: decimal; }
 #commentblock ul.children > li { list-style: none;}
 #commentblock li { margin: 0 0 14px 0; padding: 0; }
 #commentblock .comment-author {padding: 14px 10px 3px 0;}
 #commentblock cite.fn { display: block; margin-top: 7px; font-style: normal;}
-#commentblock img.avatar { float: left; margin: 0 20px 0 0;border: 1px solid #ddd; -webkit-border-radius: 28px;-moz-border-radius: 28px;border-radius: 28px;}
+#commentblock img.avatar { float: left; margin: 0 20px 0 0;border: 1px solid #ddd; -webkit-border-radius: 28px;-moz-border-radius: 28px;border-radius: 28px;border-color: rgba(0,0,0,0.1);}
 #commentblock .says {display: none;}
-#commentblock .commentmetadata {margin: 0 20px 21px 0; padding: 0 10px 14px 60px; border-bottom: 1px solid #ddd; font-size: .8em; color: #666;}
+#commentblock .commentmetadata {margin: 0 20px 21px 0; padding: 0 10px 14px 60px; border-bottom: 1px solid #ddd; border-color: rgba(0,0,0,0.15); font-size: .8em; color: #666;}
 #commentblock .reply {font-size: .8em; color: #666;}
 #commentblock ol { margin-left: 0; padding-left: 0;}
 #commentblock ul ul, #commentblock ul ol, #commentblock ol ol, #commentblock ol ul {margin: 0 30px 7px 30px;}
 #commentblock li li {background: none;margin: 0 0 14px 0;padding: 0;}
 #commentblock li ul.children li { margin-top: 14px;}
-#commentblock .bypostauthor {background: #eee;}
+#commentblock .bypostauthor {background: #eee; background: rgba(0,0,0,0.05);}
 #commentblock blockquote { border-color: #ddd; margin: 0 30px 7px 30px; background-color:#fff;}
-a.comment-edit-link { margin: 0; padding: 7px 10px; background: #fff; border: 1px solid #aaa; font-size: .8em; text-decoration: none; text-transform: uppercase;}
+a.comment-edit-link { margin: 0; padding: 7px 10px; background: #fff; border: 1px solid #aaa;font-size: .8em; text-decoration: none; text-transform: uppercase;}
 
 #commentform {padding: 10px 30px; }
-#respond { margin: 0 21px 0 0; background: #eee; border: 1px solid #ddd; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+#respond { margin: 0 21px 0 0; background: #eee;background: rgba(0,0,0,0.05); border: 1px solid #ddd;border-color: rgba(0,0,0,0.15); -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
 #respond p {margin: 0 0 14px 30px;}
 #respond h3 { margin: 14px 20px 0 30px;}
-#respond  input { width: 300px; padding: 4px 5px; border: 1px solid #ccc;}
+#respond  input { width: 300px; padding: 4px 5px; border: 1px solid #ccc;border-color: rgba(0,0,0,0.15);}
 #respond label { float: left; width: 70px;text-align: right; padding: 0 10px 0 0;}
 #respond .comment-form-comment label {display: block;}
 #respond textarea {resize: vertical;width: 70%;line-height: 1.6;padding: 5px 10px;}
