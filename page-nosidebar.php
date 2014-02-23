@@ -9,6 +9,9 @@
     while ( have_posts() ) : the_post();
     get_template_part( 'content', 'page' );
     endwhile;
+		if ( comments_open() || '0' != get_comments_number() ) :
+			comments_template();
+		endif;
   ?>
 </div><!--.sixteen.columns-->
 <?php get_footer(); ?>

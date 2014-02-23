@@ -11,6 +11,9 @@
     while ( have_posts() ) : the_post();
     get_template_part( 'content', 'page' );
     endwhile;
+		if ( comments_open() || '0' != get_comments_number() ) :
+			comments_template();
+		endif;
 	} else {
 		echo '<div class="hentry"><h2>We\'re sorry</h2><p>You must be logged in to view this page.</p></div>';
 	} 
