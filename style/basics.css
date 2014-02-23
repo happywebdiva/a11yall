@@ -11,6 +11,7 @@ small {font-size: 80%;}
 sub,sup {font-size: 75%;line-height: 0;position: relative;vertical-align: baseline;}
 sup {top: -0.5em;}
 sub {bottom: -0.25em;}
+address {margin-bottom: 1em;}
 dfn {font-style: italic;}
 mark {background: #fc6;color: #000;}
 code, pre {background: #eee;margin-bottom: 21px;max-width: 100%;overflow: auto;padding: 14px 20px 14px 30px;}
