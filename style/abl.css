@@ -64,6 +64,7 @@ p.editlink { margin-top: 14px;}
 p.editlink a { text-decoration: none; font-weight: bold;}
 p.postmetadata { padding: 14px 28px;background: #f8f8f8; background:rgba(0,0,0,0.03);border: 1px solid #ddd;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;border-color: rgba(0,0,0,0.15);}
 article.sticky p.postmetadata { background: #fff;}
+img.attachment-post-thumbnail { margin-bottom: 14px;}
 .nav-links { margin-left: 20px;}
 .nav-links .button { margin-right: 20px;}
 .nav-links a, .nav-links a:visited { text-decoration:none;}

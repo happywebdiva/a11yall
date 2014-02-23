@@ -71,27 +71,14 @@ function a11y_themesetup() {
 		'default-image' => '',
 	) ) );
 
-
-	/* ABL @@@@@ Consider doing this (code from _s)
-	 * Enable support for Post Thumbnails on posts and pages.
-	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
-	 */
-	//add_theme_support( 'post-thumbnails' );
+	// Set up Featured Images (formerly known as post thumbnails)
+	add_theme_support( 'post-thumbnails' ); 
 
   /* ABL @@@@@ Consider doing this code; see also Kitchen Sink
 	 * Code from _s
 	 */
 	// Enable support for Post Formats.
 	// add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
-
-  /* ABL @@@@@ Consider doing this code; see also Kitchen Sink
-	 * Code from _s
-	 */
-	// Setup the WordPress core custom background feature.
-	//add_theme_support( 'custom-background', apply_filters( 'a11yall_custom_background_args', array(
-	//	'default-color' => 'ffffff',
-	//	'default-image' => '',
-	//) ) );
 
 } // End Theme Setup
 
