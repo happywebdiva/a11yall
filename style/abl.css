@@ -54,8 +54,8 @@ div.mdd-menu ul.children { display: none;}
 #main table td {padding: 7px 10px;border: 1px solid #ccc;vertical-align: top;}
 #main table th {padding: 7px 10px;border: 1px solid #ccc;background: #eee;text-align: left;vertical-align: top;}
 article.hentry {margin: 0 10px 14px 20px;}
-article.sticky { padding: 14px 28px; margin-left: 10px; background: #eee; background: rgba(0, 0, 0, .04);border: 1px solid #ddd;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;border-color: rgba(0,0,0,0.15);}
-time.datehead { display: block; margin: 0 0 14px 10px; font-size: 21px; line-height: 35px;}
+article.sticky { padding: 14px 28px; margin-left: 20px; background: #eee; background: rgba(0, 0, 0, .04);border: 1px solid #ddd;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;border-color: rgba(0,0,0,0.15);}
+time.datehead { display: block; margin: 0 0 14px 20px; font-size: 21px; line-height: 35px;}
 p.page-links { margin: 28px 0; font-weight: bold;}
 p.page-links a { padding: 6px 10px; border: 1px solid #ddd; background: #eee;}
 p.editlink { margin-top: 14px;}
