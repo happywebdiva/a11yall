@@ -8,7 +8,6 @@
   	<div class="twelve columns alpha" role="main">
 		<?php if ( have_posts() ) : ?>
 	  	<h1 id="archive-title">Category Archives: <?php single_cat_title(); ?></h1>  
-      <hr />
     	<?php while ( have_posts() ) : the_post(); ?>
       	<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
         	<time datetime="' . date('Y-m-d') . '" class="datehead"><?php the_time('F j, Y'); ?></time>
