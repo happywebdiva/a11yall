@@ -50,7 +50,7 @@ div.mdd-menu ul.children { display: none;}
 #main h1 { font-size: 32px; line-height: 35px; }
 #main h2 { font-size: 28px; line-height: 35px; }
 #main h3 { font-size: 26px;}
-#main table {margin: 10px 0;font-size: .9em;}
+#main table {margin: 10px 0 14px 0;font-size: .9em;}
 #main table td {padding: 7px 10px;border: 1px solid #ccc;vertical-align: top;}
 #main table th {padding: 7px 10px;border: 1px solid #ccc;background: #eee;text-align: left;vertical-align: top;}
 .hentry {margin: 0 10px 14px 20px;}
