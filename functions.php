@@ -7,6 +7,11 @@ function add_jquery() {
 }
 add_action('init', 'add_jquery');
 
+// Set oEmbed max width for things like videos
+if ( ! isset( $content_width ) ) {
+	$content_width = 600; /* pixels */
+}
+
 // Display navigation to next/previous set of posts when applicable.
 if ( ! function_exists( 'a11yall_paging_nav' ) ) :
 function a11yall_paging_nav() {
