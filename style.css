@@ -3,11 +3,11 @@ Theme Name: All Y'all Parent Theme
 Theme URI: http: //www.happywebdiva.com/
 Author: Anna Belle Leiserson
 Author URI: http: //www.happywebdiva.com/
-Description: A custom responsive WordPress starter theme, built from the ground up for accessibility and beauty, using Underscores, normalize.css v2.1.3, Adobe's Accessible Mega Menu, plus an adaptation of H5BP v4.3.0; includes custom menus, header image, and background @@@? [consider looking at twenty-fourteen for example description@@@] 
+Description: A custom responsive HTML5 WordPress starter theme, built from the ground up for accessibility and beauty, using Underscores, normalize.css v2.1.3, and Adobe's Accessible Mega Menu. Includes customizable menus, header image, widgets and background. 
 Version: 1.5
 Text Domain: a11yall
 Domain Path: /languages/
-Tags: Accessible, H5BP, responsive (see http://wordpress.org/extend/themes/about for theme tags)
+Tags: accessibility-ready, light, responsive-layout, custom-background, custom-header, custom-menu, featured-images, flexible-header, sticky-post, theme-options, translation-ready
 
 All Y'all Theme is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, Inc., and Adobe's Accessible Mega Menu (http://adobe-accessibility.github.io/Accessible-Mega-Menu/). Note that on small screens only the first and last menu items appear; consider making one of those two "Site Map."  On large screens the menu levels are limited to two for accessibility reasons.
 */

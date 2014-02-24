@@ -74,12 +74,6 @@ function a11y_themesetup() {
 	// Set up Featured Images (formerly known as post thumbnails)
 	add_theme_support( 'post-thumbnails' ); 
 
-  /* ABL @@@@@ Consider doing this code; see also Kitchen Sink
-	 * Code from _s
-	 */
-	// Enable support for Post Formats.
-	// add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
-
 } // End Theme Setup
 
 // Register menus
