@@ -14,6 +14,13 @@ if (comments_open()) : ?>
     <ol>
       <?php wp_list_comments(array('avatar_size' => '56')); ?>
     </ol>
+    <p class="page-links">
+		<?php 
+      previous_comments_link();
+      echo '<br />';
+      next_comments_link();
+    ?>
+    </p>
     <?php comment_form(array('comment_notes_after' => '')); ?>
   </div><!--#commentblock-->
 <?php endif; ?>
