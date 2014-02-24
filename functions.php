@@ -72,7 +72,7 @@ function a11y_themesetup() {
 
 	// Setup the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'a11yall_custom_background_args', array(
-		'default-color' => 'bbbbbb',
+		'default-color' => 'dddddd',
 		'default-image' => '',
 	) ) );
 
