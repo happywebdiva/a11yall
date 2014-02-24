@@ -29,7 +29,10 @@
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" />
 <!--[if lte IE 7]><link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lt-ie8.css"><![endif]-->
 <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/modernizr-2.6.2.min.js"></script>
-<?php wp_head(); ?>
+<?php
+	if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); 
+	wp_head(); 
+?>
 </head>
 <body <?php body_class(); ?>>
 <div class="section header">
