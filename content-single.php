@@ -22,7 +22,8 @@
   </div><!--.entry-->
   <p class="postmetadata">
     Posted on <time datetime="<?php echo date('Y-m-d'); ?>"><?php the_time('F j, Y') ?></time> by <?php the_author_link(); ?><br />
-    Categories: <?php the_category(', ') ?> 
+    Categories: <?php the_category(', '); ?><br />
+    <?php the_tags(); ?>  
   </p>
   <?php edit_post_link('Edit This Post', '<p class="button editlink">', '</p>'); ?>
 </article>
