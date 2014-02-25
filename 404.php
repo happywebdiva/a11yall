@@ -6,8 +6,8 @@
 <?php get_header(); ?>
 <div class="sixteen columns" id="main">
   	<div class="twelve columns alpha" role="main">
-    <div class="hentry">
 		<h1>Page Not Found</h1>
+    <div class="hentry">
 	  <p>We're sorry.  The page you were looking for could not be found.</p>
     <p>Perhaps using the search form below would help? </p>
 		<?php get_search_form(); ?>
