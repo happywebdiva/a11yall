@@ -105,10 +105,10 @@ add_filter( 'request', 'my_request_filter' );
 // Add custom header support
 add_theme_support( 'custom-header' );
 $header_defaults = array(
-	'default-image'          => '',
+	'default-image'          => get_template_directory_uri() . '/img/header.png',
 	'random-default'         => false,
-	'width'                  => 0,
-	'height'                 => 0,
+	'width'                  => 125,
+	'height'                 => 125,
 	'flex-height'            => false,
 	'flex-width'             => false,
 	'default-text-color'     => '',
