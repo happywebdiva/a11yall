@@ -90,7 +90,7 @@ img.attachment-post-thumbnail { margin-bottom: 14px;}
 a.comment-edit-link { margin: 0; padding: 7px 10px; background: #fff; border: 1px solid #aaa;font-size: .8em; text-decoration: none; text-transform: uppercase;}
 
 #commentform {padding: 10px 30px; }
-#respond { margin: 0; background: #eee;background: rgba(0,0,0,0.05); border: 1px solid #ddd;border-color: rgba(0,0,0,0.15); -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+#respond { margin: 0 10px 0 0; background: #eee;background: rgba(0,0,0,0.05); border: 1px solid #ddd;border-color: rgba(0,0,0,0.15); -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
 #respond p {margin: 0 0 14px 30px;}
 #respond h3 { margin: 14px 20px 0 30px;}
 #respond  input { width: 300px; padding: 4px 5px; border: 1px solid #ccc;border-color: rgba(0,0,0,0.15);}
@@ -101,7 +101,7 @@ a.comment-edit-link { margin: 0; padding: 7px 10px; background: #fff; border: 1p
 #respond input#submit:hover { background: #000; color: #fff;}
 
 /* Sidebar */
-.widget-area aside { margin: 0 0 42px 20px;}
+.widget-area aside { margin: 0 0 42px 30px;}
 #main .widget-area h3 { font-size: 28px;}
 .widget-area a, .widget-area a:visited {color: #333;}
 .widget-area a:hover, .widget-area a:focus {color: #000;}

@@ -5,7 +5,7 @@
 ?>
 <?php get_header(); ?>
 <div class="sixteen columns" id="main">
-  <div class="twelve columns alpha" role="main">
+  <div class="eleven columns alpha" role="main">
 	<?php 
     while ( have_posts() ) : the_post();
     get_template_part( 'content', 'page' );
@@ -14,9 +14,9 @@
 			comments_template();
 		endif;
   ?>
-  </div><!--.twelve.columns-->
-	<div class="four columns omega">
+  </div><!--.eleven.columns-->
+	<div class="five columns omega">
   <?php get_sidebar('page'); ?>
-  </div><!--.four.columns-->
+  </div><!--.five.columns-->
 </div><!--.sixteen.columns-->
 <?php get_footer(); ?>
