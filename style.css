@@ -3,7 +3,7 @@ Theme Name: All Y'all Parent Theme
 Theme URI: http://www.a11yall.org/
 Author: Anna Belle Leiserson
 Author URI: http: //www.happywebdiva.com/
-Description: A custom responsive HTML5 WordPress starter theme, built from the ground up for accessibility, SEO and beauty, using Underscores, normalize.css v2.1.3, and Adobe's Accessible Mega Menu. Includes customizable menus, header image, widgets and background. 
+Description: A custom responsive HTML5 WordPress starter theme, built from the ground up for accessibility (as part of of the Cities suite), SEO and beauty, using Underscores, normalize.css v2.1.3, and Adobe's Accessible Mega Menu. Includes customizable menus, header image, widgets and background. 
 Version: 1.5
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -12,6 +12,8 @@ Domain Path: /languages/
 Tags: accessibility-ready, light, responsive-layout, custom-background, custom-header, custom-menu, featured-images, flexible-header, sticky-post, theme-options, translation-ready
 
 All Y'all Theme is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, Inc., and Adobe's Accessible Mega Menu (http://adobe-accessibility.github.io/Accessible-Mega-Menu/). It is also search engine optimized -- supporting the use of Yoast's SEO plugin (http://wordpress.org/plugins/wordpress-seo/), while also working well without it. Note that on small screens only the first and last menu items appear; consider making one of these "Site Map."  On large screens the menu levels are limited to two for accessibility reasons.
+
+When I officially releasae this theme, I'll mush all the CSS into this file instead of using @import -- which creates unneccessary HTTP requests, but is convenient for CSS debugging in development.
 */
 
 @import url("style/normalize.css");    /* 1. Reset cross broswer */
