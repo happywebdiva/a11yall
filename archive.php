@@ -31,8 +31,13 @@
         <?php the_excerpt(); ?>
       </div><!--.entry-->
       <p class="postmetadata">
-        Posted by <?php the_author_link(); ?> in <?php the_category(', ') ?><br /> 
-        <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?>
+        Posted by <?php the_author_link(); ?> in <?php the_category(', ') ?>
+				<?php 
+        if ( comments_open() ) {
+          echo '<br />';
+          comments_popup_link('Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); 
+        }
+        ?>
       </p>
 	  </article>
     <hr />
