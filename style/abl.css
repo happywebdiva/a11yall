@@ -68,6 +68,8 @@ img.attachment-post-thumbnail { margin-bottom: 14px;}
 .nav-links { margin-left: 20px;}
 .nav-links .button { margin-right: 20px;}
 .nav-links a, .nav-links a:visited { text-decoration:none;}
+#search-box-404 { max-width: 320px; padding: 20px 20px 0 20px; background: #eee;}
+#search-box-404 input[type="text"] { display: inline-block; margin-right: 10px; border: 1px solid #aaa;}
 
 /* Comments */
 #commentblock { margin: 0 0 0 20px;}
