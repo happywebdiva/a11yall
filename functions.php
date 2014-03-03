@@ -112,18 +112,15 @@ $header_defaults = array(
 	'flex-height'            => false,
 	'flex-width'             => false,
 	'default-text-color'     => '',
-	'header-text'            => true,
-	'uploads'                => true,
-	'wp-head-callback'       => '',
-	'admin-head-callback'    => '',
-	'admin-preview-callback' => '',
+	'header-text'            => false,
+	'uploads'                => true
 );
 add_theme_support( 'custom-header', $header_defaults );
 $header_args = array(
 	'width'         => 125,
 	'height'        => 125,
 	'default-image' => get_template_directory_uri() . '/img/header.png',
-	'uploads'       => true,
+	'uploads'       => true
 );
 add_theme_support( 'custom-header', $header_args );
 

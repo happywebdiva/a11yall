@@ -39,7 +39,17 @@
   <header class="container" role="banner">
   	<div class="sixteen columns">
         <a href="#main" class="visuallyhidden focusable" id="skiptomain">Skip to content</a>
-        <img src="<?php header_image(); ?>" id="headerlogo" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+        <?php 
+				if (get_header_image() != '') {
+					echo '<img src="';
+					header_image();
+					echo '" id="headerlogo" height="';
+					echo get_custom_header()->height;
+					echo '" width="';
+					echo get_custom_header()->width;
+					echo '" alt="" />';
+				} 
+				?>       
         <h1><a href="<?php echo home_url( '/' ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
         <h2><?php bloginfo( 'description' ); ?></h2>
         <div id="main-search-box" role="search"><?php  get_search_form() ?></div>
