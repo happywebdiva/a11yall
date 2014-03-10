@@ -5,6 +5,7 @@
 ?>
 <?php get_header(); ?>
 <div class="sixteen columns" id="main" role="main">
+	<?php if ( function_exists('yoast_breadcrumb') ) {yoast_breadcrumb('<p id="breadcrumbs">','</p>');} ?>
 	<?php 
     while ( have_posts() ) : the_post();
     get_template_part( 'content', 'page' );

@@ -5,6 +5,7 @@
 ?>
 <?php get_header(); ?>
 <div class="sixteen columns" id="main">
+  <?php if ( function_exists('yoast_breadcrumb') ) {yoast_breadcrumb('<p id="breadcrumbs">','</p>');} ?>
   <div class="eleven columns alpha" role="main">
 	<?php 
 	if (is_user_logged_in()) {

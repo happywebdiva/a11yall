@@ -29,7 +29,7 @@ div.mdd-menu ul.children { display: none;}
 .mdd-menu {display: block;position: relative;margin: 0;padding: 0;list-style: none;z-index: 15;}
 .mdd-menu a {color: #ebebeb;text-decoration: none;text-transform: uppercase;}
 .mdd-menu a:hover, .mdd-menu a:focus { background: #424242; border-bottom: 1px solid #fff;}
-.mdd-menu li.current-menu-item  a { background: #444;border-bottom: 1px solid #fff;}
+.mdd-menu li.current-menu-item  a { background: #555;border-bottom: none;}
 .menu-item {display: inline-block;margin: 0;padding: 0;list-style: none;}
 .menu-item > a {position: relative;display: inline-block;margin: 0 0 -1px 0;padding: 11px 14px;border: 1px solid transparent;}
 .menu-item-has-children > a:focus,
@@ -54,6 +54,7 @@ div.mdd-menu ul.children { display: none;}
 #main table {margin: 10px 0 14px 0;font-size: .9em;}
 #main table td {padding: 7px 10px;border: 1px solid #ccc;vertical-align: top;}
 #main table th {padding: 7px 10px;border: 1px solid #ccc;background: #eee;text-align: left;vertical-align: top;}
+p#breadcrumbs { margin: -21px -10px 21px -10px; padding: 6px 20px 7px 30px;background: #eee; background: rgba(0, 0, 0, .04); border-bottom: 1px solid #ddd; border-color: rgba(0,0,0,0.15);}
 .hentry {margin: 0 10px 14px 20px;}
 article.sticky { padding: 14px 28px; margin-left: 20px; background: #eee; background: rgba(0, 0, 0, .04);border: 1px solid #ddd;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;border-color: rgba(0,0,0,0.15);}
 time.datehead { display: block; margin: 0 0 14px 20px; font-size: 21px; line-height: 35px;}
