@@ -5,7 +5,11 @@
 ?>
 <?php get_header(); ?>
 <div class="sixteen columns" id="main">
-  <?php if ( function_exists('yoast_breadcrumb') ) {yoast_breadcrumb('<p id="breadcrumbs">','</p>');} ?>
+  <?php 
+		if( !is_front_page() ) {
+	  	if ( function_exists('yoast_breadcrumb') ) {yoast_breadcrumb('<p id="breadcrumbs">','</p>');} 
+		}
+	?>
   <div class="eleven columns alpha" role="main">
 	<?php 
     while ( have_posts() ) : the_post();
