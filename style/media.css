@@ -20,6 +20,7 @@ img#headerlogo { width:25%; margin-top: 77px;}
 .section.header h1 { font-size: 35px; line-height: 35px; margin: 77px 0 14px 0;}
 .section.header h2 { clear:both; margin: 0 14px 14px 14px; padding: 7px 14px; background: rgba(0, 0, 0, .05); text-align: center;}
 .section.header form#searchform { right:auto; left:0; margin:0; width: 100%; border: none;	}
+p#breadcrumbs { margin: -21px 0 21px 0; }
 
 #respond p {margin: 0 0 14px 0;}
 #respond label { float: none; width: auto;text-align: left; }
