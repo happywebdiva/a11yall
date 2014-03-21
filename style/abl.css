@@ -7,13 +7,13 @@ blockquote { margin: 0 0 7px; padding: 12px 10px 7px 80px; background: #f8f8f8 u
 .section.header { position: relative;}
 .section.header .container { background: #f5f5f5; background: rgba(255, 255, 255, .8);}
 .section.header #skiptomain { position:absolute; top 0; left 0; padding: 5px 10px; background:#fff;}
-img#headerlogo {float: left; margin: 7px 20px 7px 10px;}
-.section.header h1 { font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;font-size: 46px; line-height: 56px; margin: 35px 0 0 10px;}
+img#headerlogo {float: left; margin: 14px 20px 7px 10px;}
+.section.header h1 { font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;font-size: 46px; line-height: 56px; margin: 56px 0 0 10px;}
 .section.header h1 a, .section.header h1 a:visited { color:#333;text-decoration: none;}
 .section.header h1 a:hover, .section.header h1 a:focus { color:#c00;}
 .section.header h2 { font-size: 18px; letter-spacing: 0.01em; line-height: 21px; margin: 0 0 21px 10px;}
 .section.header form#searchform { position: absolute; right: 0; top: 0; width: 320px; margin: 0 10px; padding: 14px 0 0 0; background: #fff; /* fallback color */ background: rgba(0, 0, 0, 0.05); text-align: center; border-left: 1px solid #aaa; border-right: 1px solid #aaa; border-bottom: 1px solid #aaa;-webkit-border-bottom-right-radius: 5px;-webkit-border-bottom-left-radius: 5px;-moz-border-radius-bottomright: 5px;-moz-border-radius-bottomleft: 5px;border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; border-color: rgba(0,0,0,0.15);}
-.section.header form#searchform .button, .section.header form#searchform button, .section.header form#searchform input[type="submit"], .section.header form#searchform input[type="reset"], .section.header form#searchform input[type="button"] { margin-bottom: 16px; font-size: 12px;}
+.section.header form#searchform .button, .section.header form#searchform button, .section.header form#searchform input[type="submit"], .section.header form#searchform input[type="reset"], .section.header form#searchform input[type="button"] { margin-bottom: 14px; font-size: 12px;}
 .section.header input[type="text"] {width: 200px;max-width: none;display: inline; border: 1px solid #aaa; margin-right: 5px; border-color: rgba(0,0,0,0.3);}
 
 /* Navigation */
