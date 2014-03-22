@@ -6,6 +6,8 @@
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 .widget-area { padding-left: 7px;}
+.section.header h1 { line-height: 49px;}
+.section.header h2 { font-size: 18px; letter-spacing: 0.01em; line-height: 21px; margin: 7px 0 21px 156px;}
 }
 
 /* All Mobile Sizes (devices and browser) */
