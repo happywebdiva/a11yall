@@ -7,10 +7,12 @@
 	<header class="entry-header">
     <h1 id="page-title"><?php the_title(); ?></h1>
 	</header><!-- .entry-header -->
-  <div class="entry">
+  <div class="entry clearfix">
     <?php
-			if (has_post_thumbnail()) {
-				the_post_thumbnail();
+			if(has_post_thumbnail()) {
+				echo '<figure class="thumbnailsquare alignright">';
+				the_post_thumbnail('thumbnail');
+				echo '</figure>';
 			}
       the_content();
 		  wp_link_pages( array(

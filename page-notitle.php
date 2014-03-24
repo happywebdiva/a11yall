@@ -12,9 +12,6 @@
   <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <div class="entry">
       <?php
-        if (has_post_thumbnail()) {
-          the_post_thumbnail();
-        }
         the_content();
         wp_link_pages( array(
           'before' => '<p class="page-links">Pages: ',
