@@ -1,4 +1,4 @@
-<?php
+ <?php
 /**
  * @package a11yall
  */
@@ -9,11 +9,6 @@
 	</header><!-- .entry-header -->
   <div class="entry clearfix">
     <?php
-			if(has_post_thumbnail()) {
-				echo '<figure class="thumbnailsquare alignright">';
-				the_post_thumbnail('thumbnail');
-				echo '</figure>';
-			}
       the_content();
 		  wp_link_pages( array(
 				'before' => '<p class="page-links">Pages: ',

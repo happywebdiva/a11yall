@@ -68,7 +68,6 @@ p.postmetadata { padding: 14px 28px;background: #f8f8f8; background:rgba(0,0,0,0
 article.blurbing p.postmetadata {background: #fff;}
 p.postmetadata .commentlink { float: right;}
 figure.thumbnailsquare { float: left; height: 150px; width: 150px; margin: 2px 20px 14px 0; padding: 6px; border: 1px solid #ccc; background: #fff;}
-figure.thumbnailsquare.alignright { float: right; margin: 0 0 14px 20px;}
 img.attachment-post-thumbnail { margin-bottom: 14px;}
 .nav-links { margin-left: 20px;}
 .nav-links .button { margin-right: 20px;}
