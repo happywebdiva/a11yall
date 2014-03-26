@@ -54,7 +54,7 @@ p.postmetadata .commentlink { display:block; float: none;}
 @media print {
   * {background: transparent !important;color: #000 !important;box-shadow: none !important;text-shadow: none !important;}
   a, a:visited {text-decoration: underline;}
-  a[href]:after {content: " (" attr(href) ")";}
+  a[href]:after {content: " (" attr(href) ")"; font-size: 12px;}
   abbr[title]:after {content: " (" attr(title) ")";}
   .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {content: "";}
   pre, blockquote {border: 1px solid #999;page-break-inside: avoid;}
@@ -65,7 +65,7 @@ p.postmetadata .commentlink { display:block; float: none;}
   p, h2, h3 {orphans: 3;widows: 3;}
   h2, h3 {page-break-after: avoid;}
 	
-	nav.menus, nav.secondary-menu, .widget-area { display: none;}
+	#main-search-box, nav.menus, nav.secondary-menu, .commentlink, #respond, .widget-area { display: none;}
 }
 
 
