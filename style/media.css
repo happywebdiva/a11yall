@@ -24,6 +24,9 @@ img#headerlogo { width:25%; margin-top: 77px;}
 .section.header form#searchform { right:auto; left:0; margin:0; width: 100%; border: none;	}
 p#breadcrumbs { margin: -21px 0 21px 0; }
 
+.hentry {margin: 0 15px 14px 15px;}
+time.datehead { margin: 0 15px 14px 15px;}
+article.blurbing { padding: 14px 14px 14px 14px; }
 figure.thumbnailsquare { height: 80px; width: 80px;margin: 4px 10px 7px 0; }
 p.postmetadata .commentlink { display:block; float: none;}
 
