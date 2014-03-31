@@ -30,6 +30,7 @@ article.blurbing { padding: 14px 14px 14px 14px; }
 figure.thumbnailsquare { height: 80px; width: 80px;margin: 4px 10px 7px 0; }
 p.postmetadata .commentlink { display:block; float: none;}
 
+#commentblock { margin: 0 0 0 10px;}
 #respond p {margin: 0 0 14px 0;}
 #respond label { float: none; width: auto;text-align: left; }
 #respond input#submit {margin: 10px 0 15px 0;}

@@ -76,7 +76,7 @@ img.attachment-post-thumbnail { margin-bottom: 14px;}
 #search-box-404 input[type="text"] { display: inline-block; margin-right: 10px; border: 1px solid #aaa;}
 
 /* Comments */
-#commentblock { margin: 0 0 0 20px;}
+#commentblock { margin: 28px 0 0 20px;}
 #commentblock .comment-body { padding: 10px 30px; border: 1px solid #ddd; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;border-color: rgba(0,0,0,0.15);}
 #commentblock ol { list-style: none;}
 #commentblock ol ol { list-style: decimal; }
