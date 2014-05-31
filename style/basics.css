@@ -17,7 +17,7 @@ cite {font-style:italic;}
 dfn {font-style: italic;}
 ins {font-style:italic; text-decoration: none;}
 mark {background: #fc6;color: #000;}
-code, pre { display: block; background: #eee;margin-bottom: 21px;max-width: 100%;overflow: auto;padding: 14px 20px 14px 30px;}
+code, pre { display: block; background: #eee;margin: 7px 0 21px 0;max-width: 100%;overflow: auto;padding: 14px 20px 14px 30px;}
 code, kbd, pre, samp, tt, var {font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;font-size: 1em;}
 pre {white-space: pre;white-space: pre-wrap;word-wrap: break-word;}
 img {height: auto; max-width: 100%;border: 0;-ms-interpolation-mode: bicubic; vertical-align: middle;}
