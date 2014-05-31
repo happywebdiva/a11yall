@@ -38,7 +38,7 @@ ul.circle { list-style: circle outside; }
 ul.disc { list-style: disc outside; }
 ul.none { list-style: none outside; }
 ul ul, ul ol,
-ol ol, ol ul { margin: 0 0 7px 15px;  }
+ol ol, ol ul { margin: 7px 0 7px 15px;  }
 ul ul li, ul ol li,
 ol ol li, ol ul li { margin-bottom: 7px; }
 li { line-height: 21px; margin-bottom: 14px; }
