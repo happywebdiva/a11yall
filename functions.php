@@ -7,6 +7,13 @@ function add_jquery() {
 }
 add_action('init', 'add_jquery');
 
+// Enqueue style
+function a11y_styles() {
+	wp_enqueue_style( 'a11y-css', get_stylesheet_uri() );
+}
+add_action( 'wp_enqueue_scripts', 'a11y_styles' );
+
+
 // Set oEmbed max width for things like videos
 if ( ! isset( $content_width ) ) {
 	$content_width = 600; /* pixels */
