@@ -8,7 +8,7 @@ if ( post_password_required() ) {
 	return;
 }
 
-if (comments_open()) : ?>
+if (comments_open() OR have_comments()) : ?>
   <div id="commentblock">
   <?php if ( have_comments() ) : ?>
   <h4><?php comments_number('', 'One Response', '% Responses' ); // First arg is text for 0 responses ?></h4> 
