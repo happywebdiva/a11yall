@@ -9,17 +9,22 @@
   <div class="twelve columns alpha" role="main">
   <?php if ( have_posts() ) : ?>   	
     <h1>
-      <?php if ( is_day() ) : ?>
-        Daily Archives for <?php echo get_the_date(); ?>
-      <?php elseif ( is_month() ) : ?>
-        Monthly Archives for <?php echo get_the_date( 'F Y' ); ?>
-      <?php elseif ( is_year() ) : ?>
-        Yearly Archives for <?php echo get_the_date( 'Y' ); ?>
-      <?php elseif ( is_category() ) : ?>
-        <?php single_cat_title('Archive for the &#8216;'); ?>&#8217;
-      <?php else : ?>
-        Archives
-      <?php endif; ?>
+      <?php 
+				if ( is_day() ) : 
+					_e('Daily Archives for ','a11yall');
+					echo get_the_date(); 
+				elseif ( is_month() ) : 
+					_e('Monthly Archives for ','a11yall');
+					echo get_the_date( 'F Y' ); 
+				elseif ( is_year() ) : 
+					_e('Yearly Archives for ','a11yall');
+					echo get_the_date( 'Y' ); 
+				elseif ( is_category() ) : 
+					_e('Yearly Archives for ','a11yall');
+			 	else : 
+					_e('Archives','a11yall');
+				endif; 
+			?>
     </h1>
     <hr />
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -30,12 +35,20 @@
           <?php the_excerpt(); ?>
         </div><!--.entry-->
         <p class="postmetadata">
-          Posted by <?php the_author_link(); ?> in <?php the_category(', ') ?>
+					<?php
+						_e('Posted by ','a11yall'); 
+						the_author_link(); 
+						_e(' in ','a11yall');
+						the_category(', ') 
+					?>
           <?php 
-          if ( comments_open() ) {
-            echo '<br />';
-            comments_popup_link('Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); 
-          }
+						if (!post_password_required() AND (comments_open() OR (get_comments_number() > 0))) {
+							echo '<span class="commentlink">';
+							$one =  sprintf( __('1 Comment' , 'a11yall') );
+							$more = sprintf( __('Comments' , 'a11yall') );
+							comments_popup_link($more, $one, '%'.$more); 
+							echo '</span>';
+						}
           ?>
         </p>
       </article>
