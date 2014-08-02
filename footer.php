@@ -22,9 +22,11 @@
 <div class="section footer">
   <footer class="container" role="contentinfo">
   	<div class="sixteen columns">
-  	  <p>Copyright &copy; <?php echo date("Y"); ?> : 
-	    <a href="<?php echo home_url( '/' ); ?>"><?php bloginfo('name'); ?></a>
-	    </p>
+  	  <p><?php 
+				_e('Copyright &copy; ','a11yall');
+				echo date("Y"); 
+				?> : <a href="<?php echo home_url( '/' ); ?>"><?php bloginfo('name'); ?></a>
+      </p>
 	  </div>
   </footer>
 </div><!--.section.footer-->
