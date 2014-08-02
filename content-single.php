@@ -22,5 +22,8 @@
     Categories: <?php the_category(', '); ?><br />
     <?php the_tags(); ?>  
   </p>
-  <?php edit_post_link('Edit This Post', '<p class="button editlink">', '</p>'); ?>
+  <?php 
+		$editpost =  sprintf( __('Edit This Post' , 'a11yall') );
+		edit_post_link($editpost, '<p class="button editlink">', '</p>'); 
+	?>
 </article>

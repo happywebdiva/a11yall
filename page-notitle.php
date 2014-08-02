@@ -19,7 +19,10 @@
         ) );
       ?>
     </div><!--.entry-->
-    <?php edit_post_link('Edit This Page', '<p class="button editlink">', '</p>'); ?>
+		<?php 
+      $editpage =  sprintf( __('Edit This Page' , 'a11yall') );
+      edit_post_link($editpage, '<p class="button editlink">', '</p>'); 
+    ?>    
   </article>
 	<?php
     endwhile;
