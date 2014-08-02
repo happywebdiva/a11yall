@@ -22,11 +22,16 @@
     <?php the_excerpt(); ?>
   </div><!--.entry-->
   <p class="postmetadata">
-    Posted in <?php the_category(', ') ?>
     <?php 
-		if ( comments_open() ) {
+			_e('Posted in ','a11yall');
+			the_category(', '); 
+		?>
+    <?php 	
+		if (!post_password_required() AND (comments_open() OR (get_comments_number() > 0))) {
 			echo '<span class="commentlink">';
-			comments_popup_link('Comments', '1 Comment', '% Comments'); 
+			$one =  sprintf( __('1 Comment' , 'a11yall') );
+			$more = sprintf( __('Comments' , 'a11yall') );
+			comments_popup_link($more, $one, '%'.$more); 
 			echo '</span>';
 		}
 		?>
