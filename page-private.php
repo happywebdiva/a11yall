@@ -16,7 +16,6 @@
 			comments_template();
 		endif;
 	} else {
-//		echo '<div class="hentry"><h2>We\'re sorry</h2><p>You must be logged in to view this page.</p></div>';
 		// Instead of using echo ... make translatable
 		_e('<div class="hentry"><h2>We\'re sorry</h2><p>You must be logged in to view this page.</p></div>','a11yall');
 	} 
