@@ -11,7 +11,11 @@ if ( post_password_required() ) {
 if (comments_open() OR have_comments()) : ?>
   <div id="commentblock">
   <?php if ( have_comments() ) : ?>
-  <h4><?php comments_number('', 'One Response', '% Responses' ); // First arg is text for 0 responses ?></h4> 
+    <h4><?php 
+			$one =  sprintf( __('One Response' , 'a11yall') );
+			$more = sprintf( __('Responses' , 'a11yall') );
+			comments_number( '', $one, '% '.$more ); // First arg is text for 0 responses 
+		?></h4> 
     <ol>
       <?php wp_list_comments(array('avatar_size' => '56')); ?>
     </ol>
