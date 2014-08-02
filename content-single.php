@@ -17,11 +17,17 @@
 			) );
 		?>
   </div><!--.entry-->
-  <p class="postmetadata">
-    Posted on <time datetime="<?php echo date('Y-m-d'); ?>"><?php the_time('F j, Y') ?></time> by <?php the_author_link(); ?><br />
-    Categories: <?php the_category(', '); ?><br />
-    <?php the_tags(); ?>  
-  </p>
+  <p class="postmetadata"><?php 
+		_e('Posted on <time datetime="','a11yall');
+		echo date('Y-m-d') . '">'; 
+		the_time('F j, Y');
+		_e('</time> by ','a11yall');
+		the_author_link(); 
+		_e('<br />Categories: ','a11yall');
+		the_category(', '); 
+		echo '<br />';
+		the_tags();
+  ?></p>
   <?php 
 		$editpost =  sprintf( __('Edit This Post' , 'a11yall') );
 		edit_post_link($editpost, '<p class="button editlink">', '</p>'); 
