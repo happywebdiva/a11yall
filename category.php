@@ -8,7 +8,10 @@
   <?php if ( function_exists('yoast_breadcrumb') ) {yoast_breadcrumb('<p id="breadcrumbs">','</p>');} ?>
   <div class="twelve columns alpha" role="main">
   <?php if ( have_posts() ) : ?>
-    <h1 id="archive-title">Category Archives: <?php single_cat_title(); ?></h1>  
+    <h1 id="archive-title"><?php 
+			_e('Category Archives: ','a11yall');
+			single_cat_title(); 
+		?></h1>  
     <?php while ( have_posts() ) : the_post(); ?>
       <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
         <time datetime="' . date('Y-m-d') . '" class="datehead"><?php the_time('F j, Y'); ?></time>
@@ -16,19 +19,22 @@
         <div class="entry">
           <?php 
             the_excerpt(); 
-            // wp_link_pages();
-            edit_post_link('edit', '<p>', '</p>');
           ?>
         </div><!--.entry-->
-        <p class="postmetadata">
-           Posted by <?php the_author_link(); ?> in <?php the_category(', ') ?>
-          <?php 
-          if ( comments_open() ) {
-            echo '<br />';
-            comments_popup_link('Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); 
-          }
-          ?>
-        </p>
+        <p class="postmetadata"><?php 
+					_e('Posted by ','a11yall'); 
+					the_author_link(); 
+					_e(' in ','a11yall');
+					the_category(', '); 
+	
+					if (!post_password_required() AND (comments_open() OR (get_comments_number() > 0))) {
+						echo '<span class="commentlink">';
+						$one =  sprintf( __('1 Comment' , 'a11yall') );
+						$more = sprintf( __('Comments' , 'a11yall') );
+						comments_popup_link($more, $one, '% '.$more); 
+						echo '</span>';
+					}
+        ?></p>
       </article>
       <hr />
     <?php endwhile; ?>

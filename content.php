@@ -31,7 +31,7 @@
 			echo '<span class="commentlink">';
 			$one =  sprintf( __('1 Comment' , 'a11yall') );
 			$more = sprintf( __('Comments' , 'a11yall') );
-			comments_popup_link($more, $one, '%'.$more); 
+			comments_popup_link($more, $one, '% '.$more); 
 			echo '</span>';
 		}
 		?>

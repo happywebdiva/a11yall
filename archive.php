@@ -39,14 +39,13 @@
 						_e('Posted by ','a11yall'); 
 						the_author_link(); 
 						_e(' in ','a11yall');
-						the_category(', ') 
-					?>
-          <?php 
+						the_category(', ');
+
 						if (!post_password_required() AND (comments_open() OR (get_comments_number() > 0))) {
 							echo '<span class="commentlink">';
 							$one =  sprintf( __('1 Comment' , 'a11yall') );
 							$more = sprintf( __('Comments' , 'a11yall') );
-							comments_popup_link($more, $one, '%'.$more); 
+							comments_popup_link($more, $one, '% '.$more); 
 							echo '</span>';
 						}
           ?>
