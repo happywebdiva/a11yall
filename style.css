@@ -15,11 +15,12 @@ The All Y'all Theme is based on Underscores http://underscores.me/, (C) 2012-201
 
 It is search engine optimized - supporting the use of Yoast's SEO plugin (http://wordpress.org/plugins/wordpress-seo/) - and also works well without Yoast's plugin. 
 
-Currently it has four page templates:
+Currently it has five page templates:
      1. Private Page Template (useful for "member-only" sections of the site)
 		 2. Page Without Title Template (useful for some landing pages)
 		 3. Page Without Sidebar Template
-		 4. Site Map Template (a simple alternative if you don't want to hand-build a site map for your site)
+		 4. Page Without Sidebar or Title Template (useful for some landing pages)
+		 5. Site Map Template (a simple alternative if you don't want to hand-build a site map for your site)
 
 Note that on small screens only the first and last menu items appear; consider making one of these "Site Map."  On large screens the menu levels are limited to two for accessibility reasons.
 
