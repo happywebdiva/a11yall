@@ -1,0 +1,132 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: All Y'all Parent Theme\n"
+"POT-Creation-Date: 2014-08-09 10:44-0600\n"
+"PO-Revision-Date: 2014-08-09 10:54-0600\n"
+"Last-Translator: Anna Belle Leiserson <git@happywebdiva.com>\n"
+"Language-Team: Anna Belle Leiserson <git@happywebdiva.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.7\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: 404.php:10
+msgid "<h1>Page Not Found</h1>"
+msgstr ""
+
+#: 404.php:14
+msgid ""
+"<p>We're sorry.  The page you were looking for could not be found.</"
+"p><p>Perhaps using the search form below would help? </p>"
+msgstr ""
+
+#: archive.php:14
+msgid "Daily Archives for "
+msgstr ""
+
+#: archive.php:17
+msgid "Monthly Archives for "
+msgstr ""
+
+#: archive.php:20 archive.php:23
+msgid "Yearly Archives for "
+msgstr ""
+
+#: archive.php:25
+msgid "Archives"
+msgstr ""
+
+#: archive.php:39 category.php:25
+msgid "Posted by "
+msgstr ""
+
+#: archive.php:41 category.php:27
+msgid " in "
+msgstr ""
+
+#: archive.php:46 category.php:32 content.php:32
+msgid "1 Comment"
+msgstr ""
+
+#: archive.php:47 category.php:33 content.php:33
+msgid "Comments"
+msgstr ""
+
+#: category.php:12
+msgid "Category Archives: "
+msgstr ""
+
+#: comments.php:15
+msgid "One Response"
+msgstr ""
+
+#: comments.php:16
+msgid "Responses"
+msgstr ""
+
+#: content-page.php:20 page-nosidebar-notitle.php:25 page-notitle.php:23
+msgid "Edit This Page"
+msgstr ""
+
+#: content-single.php:21
+msgid "Posted on <time datetime=\""
+msgstr ""
+
+#: content-single.php:24
+msgid "</time> by "
+msgstr ""
+
+#: content-single.php:26
+msgid "<br />Categories: "
+msgstr ""
+
+#: content-single.php:32
+msgid "Edit This Post"
+msgstr ""
+
+#: content.php:26
+msgid "Posted in "
+msgstr ""
+
+#: footer.php:26
+msgid "Copyright &copy; "
+msgstr ""
+
+#: functions.php:31
+msgid "Posts navigation"
+msgstr ""
+
+#: functions.php:34
+msgid "Older posts"
+msgstr ""
+
+#: functions.php:37
+msgid "Newer posts"
+msgstr ""
+
+#: functions.php:93
+msgid "Main Menu"
+msgstr ""
+
+#: functions.php:94
+msgid "Footer Menu"
+msgstr ""
+
+#: header.php:20
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: page-private.php:20
+msgid ""
+"<div class=\"hentry\"><h2>We're sorry</h2><p>You must be logged in to view "
+"this page.</p></div>"
+msgstr ""
