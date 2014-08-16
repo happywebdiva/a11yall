@@ -13,6 +13,8 @@ function a11y_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'a11y_styles' );
 
+// Styling the visual admin editor to resemble the theme style
+add_editor_style( 'css/editor-style.css');
 
 // Set oEmbed max width for things like videos
 if ( ! isset( $content_width ) ) {
