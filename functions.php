@@ -31,12 +31,12 @@ function a11yall_paging_nav() {
 	?>
 	<nav class="navigation paging-navigation" role="navigation">
 		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'a11yall' ); ?></h1>
-		<div class="nav-links">
+		<div class="page-links nav-links">
 			<?php if ( get_next_posts_link() ) : ?>
-			<div class="button"><?php next_posts_link( __( 'Older posts', 'a11yall' ) ); ?></div>
+			<?php next_posts_link( __( 'Older posts', 'a11yall' ) ); echo ' &nbsp; &nbsp;'; ?>
 			<?php endif; ?>
 			<?php if ( get_previous_posts_link() ) : ?>
-			<div class="button"><?php previous_posts_link( __( 'Newer posts', 'a11yall' ) ); ?></div>
+			<?php previous_posts_link( __( 'Newer posts', 'a11yall' ) ); ?>
 			<?php endif; ?>
 		</div><!--.nav-links-->
 	</nav>

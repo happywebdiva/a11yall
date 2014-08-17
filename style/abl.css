@@ -69,8 +69,9 @@ article.blurbing { padding: 21px 28px 14px 28px; background: #eee; background-co
 article.sticky { background-image: url(../img/star-circle.png); background-repeat: no-repeat; background-position: right top;}
 time.datehead { display: block; margin: 0 0 14px 20px; font-size: 21px; line-height: 35px;}
 article time.datehead { margin-left: 0;}
-p.page-links { margin: 28px 0; font-weight: bold;}
-p.page-links a { padding: 6px 10px; border: 1px solid #ddd; background: #eee;}
+.page-links { margin: 28px 0; font-weight: bold;}
+.page-links a { padding: 6px 15px; border: 1px solid #ddd; background: #eee; text-decoration:none;}
+.page-links a:hover, .page-links a:focus { background: #222; color: #fff;}
 p.editlink { margin-top: 14px;}
 p.editlink a { text-decoration: none; font-weight: bold;}
 p.postmetadata { padding: 14px 28px;background: #f8f8f8; background:rgba(0,0,0,0.03);border: 1px solid #ddd;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;border-color: rgba(0,0,0,0.15);}
@@ -81,6 +82,7 @@ img.attachment-post-thumbnail { margin-bottom: 14px;}
 .nav-links { margin-left: 20px;}
 .nav-links .button { margin-right: 20px;}
 .nav-links a, .nav-links a:visited { text-decoration:none;}
+.nav-links a:hover, .nav-links a:focus { background: #222; color: #fff;}
 #search-box-404 { max-width: 320px; padding: 20px 20px 0 20px; background: #eee;}
 #search-box-404 input[type="text"] { display: inline-block; margin-right: 10px; border: 1px solid #aaa;}
 

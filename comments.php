@@ -23,7 +23,7 @@ if (comments_open() OR have_comments()) : ?>
     <p class="page-links">
 		<?php 
       previous_comments_link();
-      echo '<br />';
+      echo ' &nbsp; &nbsp; ';
       next_comments_link();
     ?>
     </p>
