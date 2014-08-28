@@ -53,6 +53,7 @@
       </article>
 	    <hr />
 		<?php endwhile; ?>
+    <div class="nav-links"><p class="page-links"><?php posts_nav_link(' &nbsp; &nbsp; '); ?></p></div>
   <?php 
 		else : 
   		get_template_part( 'content', 'none' );
