@@ -1,2 +1,7 @@
+# From OSX.gitignore
+.DS_Store
+.AppleDouble
+.LSOverride
+
 # Theme author to do list
 abl-allyall-readme.txt
