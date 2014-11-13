@@ -31,7 +31,7 @@
 					echo '" alt="" />';
 				} 
 				?>       
-        <h1><a href="<?php echo home_url( '/' ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+        <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
         <p id="tagline"><?php bloginfo( 'description' ); ?></p>
         <div id="main-search-box" role="search"><?php  get_search_form() ?></div>
     </div><!--.sixteen.columns-->

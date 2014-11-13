@@ -25,7 +25,7 @@
   	  <p><?php 
 				_e('Copyright &copy; ','a11yall');
 				echo date("Y"); 
-				?> : <a href="<?php echo home_url( '/' ); ?>"><?php bloginfo('name'); ?></a>
+				?> : <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo('name'); ?></a>
       </p>
 	  </div>
   </footer>
