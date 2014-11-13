@@ -5,7 +5,15 @@ function a11yall_scripts() {
 //	wp_enqueue_style( 'a11yall-style', get_stylesheet_uri() );
 
 //	wp_enqueue_script( 'a11yall-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+
+	// add modernizr to header
 	wp_enqueue_script( 'a11yall-modernizr', get_template_directory_uri() . '/js/vendor/modernizr-2.6.2.min.js' );
+
+	// add plugins to footer
+	wp_enqueue_script( 'a11yall-plugins', get_template_directory_uri() . '/js/plugins.js', array(), '20141113', true );
+
+	// add plugins to footer
+	wp_enqueue_script( 'a11yall-mainjs', get_template_directory_uri() . '/js/main.js', array(), '20141113', true );
 
 //	wp_enqueue_script( 'a11yall-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
