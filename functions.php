@@ -8,10 +8,10 @@ function add_jquery() {
 add_action('init', 'add_jquery');
 
 // Enqueue style
-function a11y_styles() {
+function a11yall_styles() {
 	wp_enqueue_style( 'a11y-css', get_stylesheet_uri() );
 }
-add_action( 'wp_enqueue_scripts', 'a11y_styles' );
+add_action( 'wp_enqueue_scripts', 'a11yall_styles' );
 
 // Styling the visual admin editor to resemble the theme style
 add_editor_style( 'css/editor-style.css');
@@ -45,7 +45,7 @@ function a11yall_paging_nav() {
 endif;
 
 // Set up a sidebar widger
-function a11y_widgets_init() {
+function a11yall_widgets_init() {
 	register_sidebar( array(
   	'name' => 'Sidebar Widgets',
     'id'   => 'sidebar-widgets',
@@ -65,12 +65,12 @@ function a11y_widgets_init() {
     'after_title'   => '</h3>'
    ));
 }
-add_action( 'widgets_init', 'a11y_widgets_init' );
+add_action( 'widgets_init', 'a11yall_widgets_init' );
 
 // Start Theme Setup. 
-// Run a11y_themesetup() to make various things possible when the 'after_setup_theme' hook is run. 
-add_action('after_setup_theme', 'a11y_themesetup');
-function a11y_themesetup() {
+// Run a11yall_themesetup() to make various things possible when the 'after_setup_theme' hook is run. 
+add_action('after_setup_theme', 'a11yall_themesetup');
+function a11yall_themesetup() {
 	
 	// Make theme available for translation
 	// Translations can be filed in the /languages/ directory.
