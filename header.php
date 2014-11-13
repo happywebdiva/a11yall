@@ -7,10 +7,7 @@
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title><?php	
-	// Using minimum wp_title() so works best with Yoast's SEO plugin (https://yoast.com/wordpress-seo-plugin-theme-integration-guide/)
-	wp_title('');
-?></title>
+<title><?php	wp_title(''); ?></title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--[if lte IE 7]><link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lt-ie8.css"><![endif]-->
 <?php wp_head(); ?>

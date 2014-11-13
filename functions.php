@@ -54,6 +54,21 @@ function a11yall_paging_nav() {
 }
 endif;
 
+// Improve SEO on title tag in case don't use plugin 
+function a11yall_wp_title( $title ) {
+	global $page, $paged;
+	if ( is_feed() )
+		return $title;
+	if ( is_home() || is_front_page() ) {
+		$filtered_title = get_bloginfo( 'name' ) . ' - ' . get_bloginfo('description');
+	} else {
+		$filtered_title = $title . ' - ' . get_bloginfo( 'name' );
+		$filtered_title .= ( 2 <= $paged || 2 <= $page ) ? ' - ' . sprintf( __( 'Page %s' ), max( $paged, $page ) ) : '';
+	}
+	return $filtered_title;
+}
+add_filter( 'wp_title', 'a11yall_wp_title' );
+
 // Set up a sidebar widger
 function a11yall_widgets_init() {
 	register_sidebar( array(
