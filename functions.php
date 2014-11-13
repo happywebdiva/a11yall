@@ -13,14 +13,6 @@ function a11yall_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'a11yall_styles' );
 
-// Styling the visual admin editor to resemble the theme style
-add_editor_style( 'css/editor-style.css');
-
-// Set oEmbed max width for things like videos
-if ( ! isset( $content_width ) ) {
-	$content_width = 600; /* pixels */
-}
-
 // Display navigation to next/previous set of posts when applicable.
 if ( ! function_exists( 'a11yall_paging_nav' ) ) :
 function a11yall_paging_nav() {
@@ -71,7 +63,15 @@ add_action( 'widgets_init', 'a11yall_widgets_init' );
 // Run a11yall_themesetup() to make various things possible when the 'after_setup_theme' hook is run. 
 add_action('after_setup_theme', 'a11yall_themesetup');
 function a11yall_themesetup() {
+
+	// Styling the visual admin editor to resemble the theme style
+	add_editor_style( 'css/editor-style.css');
 	
+	// Set oEmbed max width for things like videos
+	if ( ! isset( $content_width ) ) {
+		$content_width = 600; /* pixels */
+	}
+
 	// Make theme available for translation
 	// Translations can be filed in the /languages/ directory.
 	load_theme_textdomain( 'a11yall', get_template_directory() . '/languages' );
@@ -88,13 +88,27 @@ function a11yall_themesetup() {
 	// Set up Featured Images (formerly known as post thumbnails)
 	add_theme_support( 'post-thumbnails' ); 
 
-} // End Theme Setup
+	// Register menus
+	register_nav_menus( array(
+		'primary' => __( 'Main Menu', 'a11yall' ),
+		'secondary' => __( 'Footer Menu', 'a11yall' )
+	) );
 
-// Register menus
-register_nav_menus( array(
-	'primary' => __( 'Main Menu', 'a11yall' ),
-	'secondary' => __( 'Footer Menu', 'a11yall' )
-) );
+	// Add custom header support
+	$header_defaults = array(
+		'default-image'          => get_template_directory_uri() . '/img/header.png',
+		'random-default'         => false,
+		'width'                  => 125,
+		'height'                 => 125,
+		'flex-height'            => false,
+		'flex-width'             => false,
+		'default-text-color'     => '',
+		'header-text'            => false,
+		'uploads'       => true
+	);
+	add_theme_support( 'custom-header', $header_defaults );
+
+} // End Theme Setup
 
 // Remove double spaces
 function remove_spaces($the_content) {
@@ -110,27 +124,5 @@ function my_request_filter( $query_vars ) {
     return $query_vars;
 }
 add_filter( 'request', 'my_request_filter' );
-
-// Add custom header support
-add_theme_support( 'custom-header' );
-$header_defaults = array(
-	'default-image'          => get_template_directory_uri() . '/img/header.png',
-	'random-default'         => false,
-	'width'                  => 125,
-	'height'                 => 125,
-	'flex-height'            => false,
-	'flex-width'             => false,
-	'default-text-color'     => '',
-	'header-text'            => false,
-	'uploads'                => true
-);
-add_theme_support( 'custom-header', $header_defaults );
-$header_args = array(
-	'width'         => 125,
-	'height'        => 125,
-	'default-image' => get_template_directory_uri() . '/img/header.png',
-	'uploads'       => true
-);
-add_theme_support( 'custom-header', $header_args );
 
 ?>
