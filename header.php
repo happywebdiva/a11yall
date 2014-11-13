@@ -7,24 +7,10 @@
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>
-<?php	
-	// Detect whether usin Yoast's WordPress SEO Plugin and change title accordingly
- include_once( ABSPATH . 'wp-admin/includes/plugin.php' ); 
- if (is_plugin_active('wordpress-seo/wp-seo.php')) {
-	 wp_title('');
- } else {
-	global $page, $paged;
-	wp_title('-',true,'right');
-	if ( $paged >= 2 || $page >= 2 )
-		echo  sprintf( __( 'Page %s', 'a11yall' ), max( $paged, $page ) ), ' - ';
-	bloginfo( 'name' );
-	$site_description = get_bloginfo('description','display' );
-	if ( $site_description && ( is_home() || is_front_page() ) )
-		echo " - $site_description";
-  }
-?>
-</title>
+<title><?php	
+	// Using minimum so works best with Yoast's SEO plugin
+	wp_title();
+?></title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/modernizr-2.6.2.min.js"></script>
 <?php
