@@ -1,10 +1,14 @@
 <?php
-
 // Enqueue scripts and styles.
 function a11yall_scripts() {
-//	wp_enqueue_style( 'a11yall-style', get_stylesheet_uri() );
 
-//	wp_enqueue_script( 'a11yall-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+	// Activate jQuery using method at http://css-tricks.com/snippets/wordpress/include-jquery-in-wordpress-theme/
+	if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 11);
+	function my_jquery_enqueue() {
+		 wp_deregister_script('jquery');
+		 wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js", false, null);
+		 wp_enqueue_script('jquery');
+	}
 
 	// add modernizr to header
 	wp_enqueue_script( 'a11yall-modernizr', get_template_directory_uri() . '/js/vendor/modernizr-2.6.2.min.js' );
@@ -20,14 +24,6 @@ function a11yall_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'a11yall_scripts' );
-
-// Activate jQuery
-function add_jquery() {
-  if (!is_admin()) {
-	 wp_enqueue_script('jquery');
-  }
-}
-add_action('init', 'add_jquery');
 
 // Enqueue style
 function a11yall_styles() {
