@@ -3,4 +3,4 @@ a11yall
 
 A custom responsive WordPress starter theme, built from the ground up for accessibility and beauty.
 
-27-Jan. 2014: Works cross browser and on mobile. Accessibility tests not complete yet.
+For documentation to how to use this theme, see http://www.a11yall.org/ -- in particular http://www.a11yall.org/allyall-wordpress-theme/getting-started/

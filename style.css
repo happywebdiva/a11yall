@@ -15,7 +15,7 @@ The All Y'all Theme is based on Underscores http://underscores.me/, (C) 2012-201
 
 It is designed to be a parent theme, making it easy to spread accessibility-ready child themes (http://www.a11yall.org/child-themes/).
 
-It is search engine optimized - supporting the use of Yoast's SEO plugin (http://wordpress.org/plugins/wordpress-seo/) including his use of breadcrumb trails - and also works well without Yoast's plugin. 
+It supports the use of Yoast's SEO plugin (http://wordpress.org/plugins/wordpress-seo/) including his use of breadcrumb trails. 
 
 Currently it has five page templates:
      1. Private Page Template (useful for "member-only" sections of the site)
