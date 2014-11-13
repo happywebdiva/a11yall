@@ -13,10 +13,7 @@
 ?></title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--[if lte IE 7]><link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lt-ie8.css"><![endif]-->
-<?php
-	if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); 
-	wp_head(); 
-?>
+<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
 <div class="section header">
