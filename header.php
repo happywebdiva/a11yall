@@ -8,8 +8,8 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title><?php	
-	// Using minimum wp_title() so works best with Yoast's SEO plugin
-	wp_title();
+	// Using minimum wp_title() so works best with Yoast's SEO plugin (https://yoast.com/wordpress-seo-plugin-theme-integration-guide/)
+	wp_title('');
 ?></title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/modernizr-2.6.2.min.js"></script>
