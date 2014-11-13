@@ -12,7 +12,6 @@
 	wp_title('');
 ?></title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/modernizr-2.6.2.min.js"></script>
 <!--[if lte IE 7]><link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lt-ie8.css"><![endif]-->
 <?php
 	if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); 
