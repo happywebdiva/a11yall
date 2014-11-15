@@ -27,3 +27,16 @@ Licensed under the Apache License, Version 2.0 (the "License");
    limitations under the License.
 Source: https://github.com/adobe-accessibility/Accessible-Mega-Menu/blob/master/LICENSE
 
+=======
+
+Acknowledgments
+
+This theme would not have been possible without the help of the following.  My gratitude to each of them.
+
+1. Thank you to my W3C EOWG friend, Jennifer Sutton, who got me to the CSUN WordPress presentation about Accessible Cities.
+
+2. And thank you to Joseph Karr O'Connor for inspiring me and then encouraging me to keep going on an Accessible Cities theme.
+
+3. Thank you to my W3C EOWG friend, Wayne Dick, and his student, John Sweet, for their detailed accessibilty review of this theme in July 2014.
+
+4. And thank you to WordPress theme reviewer Pratik Shrestha who helped me bring this code into compliance. See: https://themes.trac.wordpress.org/ticket/20513
