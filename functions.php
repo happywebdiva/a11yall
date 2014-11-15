@@ -2,21 +2,13 @@
 // Enqueue scripts and styles.
 function a11yall_scripts() {
 
-	// Activate jQuery using method at http://css-tricks.com/snippets/wordpress/include-jquery-in-wordpress-theme/
-	if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 11);
-	function my_jquery_enqueue() {
-		 wp_deregister_script('jquery');
-		 wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js", false, null);
-		 wp_enqueue_script('jquery');
-	}
-
-	// add modernizr to header
-	wp_enqueue_script( 'a11yall-modernizr', get_template_directory_uri() . '/js/vendor/modernizr-2.6.2.min.js' );
+	// Add first jquery first as dependent script of modernizr (loaded in header), since modernizr requires jquery
+	wp_enqueue_script( 'a11yall-modernizr', get_template_directory_uri() . '/js/vendor/modernizr-2.6.2.min.js',array('jquery') );
 
 	// add plugins to footer
 	wp_enqueue_script( 'a11yall-plugins', get_template_directory_uri() . '/js/plugins.js', array(), '20141113', true );
 
-	// add plugins to footer
+	// add main js to footer
 	wp_enqueue_script( 'a11yall-mainjs', get_template_directory_uri() . '/js/main.js', array(), '20141113', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
