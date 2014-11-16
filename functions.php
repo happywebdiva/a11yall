@@ -55,7 +55,7 @@ function a11yall_wp_title( $title ) {
 		$filtered_title = get_bloginfo( 'name' ) . ' - ' . get_bloginfo('description');
 	} else {
 		$filtered_title = $title . ' - ' . get_bloginfo( 'name' );
-		$filtered_title .= ( 2 <= $paged || 2 <= $page ) ? ' - ' . sprintf( __( 'Page %s' ), max( $paged, $page ) ) : '';
+		$filtered_title .= ( 2 <= $paged || 2 <= $page ) ? ' - ' . sprintf( __( 'Page %s', 'a11yall' ), max( $paged, $page ) ) : '';
 	}
 	return $filtered_title;
 }
