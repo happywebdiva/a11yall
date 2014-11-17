@@ -69,8 +69,8 @@ function a11yall_widgets_init() {
     'description'   => 'Drag widget for the sidebar here',
     'before_widget' => '<aside id="%1$s" class="widget %2$s">',
     'after_widget'  => '</aside>',
-    'before_title'  => '<h3>',
-    'after_title'   => '</h3>'
+    'before_title'  => '<h2>',
+    'after_title'   => '</h2>'
   ));
 	register_sidebar( array(
 		'name' => 'Page Sidebar',
@@ -78,8 +78,8 @@ function a11yall_widgets_init() {
 		'description'   => 'Drag to create or update the sidebar for pages',
 		'before_widget' => '<aside class="widget %2$s">',
     'after_widget'  => '</aside>',
-    'before_title'  => '<h3>',
-    'after_title'   => '</h3>'
+    'before_title'  => '<h2>',
+    'after_title'   => '</h2>'
    ));
 }
 add_action( 'widgets_init', 'a11yall_widgets_init' );

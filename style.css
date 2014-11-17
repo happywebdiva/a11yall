@@ -588,7 +588,6 @@ a.comment-edit-link { margin: 0; padding: 7px 10px; background: #fff; border: 1p
 #respond input#submit:hover { background: #000; color: #fff;}
 /* Sidebar */
 .widget-area aside { margin: 0 0 42px 30px;}
-#main .widget-area h3 { font-size: 28px;}
 .widget-area a, .widget-area a:visited {color: #333;}
 .widget-area a:hover, .widget-area a:focus {color: #000;}
 .widget-area ul, .widget-area ol { margin-left: 0;}
