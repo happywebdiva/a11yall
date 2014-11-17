@@ -110,7 +110,7 @@ html {overflow-y: scroll;}
 body {background: #fff;}
 a {color: royalblue;}
 a:visited {color: purple;}
-a:hover,a:focus,a:active {color: #c00;}
+a:hover,a:focus,a:active {color: #c00; text-decoration:none;}
 em {font-style: italic;}
 strong, b {font-weight: bold;}
 small {font-size: 80%;}
@@ -490,7 +490,7 @@ code, kbd, pre, samp, tt, var { font-size: 13px;}
 img#headerlogo {float: left; margin: 14px 20px 7px 10px;}
 .section.header h1 { font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;font-size: 46px; line-height: 56px; margin: 56px 0 0 10px;}
 .section.header h1 a, .section.header h1 a:visited { color:#333;text-decoration: none;}
-.section.header h1 a:hover, .section.header h1 a:focus { color:#c00;}
+.section.header h1 a:hover, .section.header h1 a:focus { color:#c00; text-decoration: underline;}
 .section.header p#tagline { 
 margin: 0; padding: 0; color: #181818;font-weight: normal;
 margin-bottom: 14px; 
