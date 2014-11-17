@@ -5,8 +5,8 @@
 ?>
 	</div><!--.container-->
 </div><!--.section-->
-<div class="section mainmenu">  
-  <div class="sixteen columns alpha omega">  
+<div class="section mainmenu" role="navigation">  
+  <div class="sixteen columns alpha omega">
 	  <?php 
       wp_nav_menu( array( 
 				'theme_location' => 'secondary', 
