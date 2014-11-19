@@ -135,6 +135,16 @@ function a11yall_themesetup() {
 
 } // End Theme Setup
 
+// For primary menu, create fallback with just 1 level depth for 
+function primary_menu_fallback() {
+	echo '<div id="site-navigation" class="navfallback container menus" role="navigation"><ul id="menu-main-menu" class="mdd-menu">';
+	wp_list_pages(array(
+			'depth' => 1, 
+			'title_li' => ''
+	));
+	echo '</ul></div>';
+}
+
 // Remove double spaces
 function remove_spaces($the_content) {
   return preg_replace( '/[\p{Z}\s]{2,}/u', ' ', $the_content );
