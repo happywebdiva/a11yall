@@ -17,7 +17,11 @@
 		endif;
 	} else {
 		// Instead of using echo ... make translatable
-		_e('<div class="hentry"><h2>We\'re sorry</h2><p>You must be logged in to view this page.</p></div>','a11yall');
+		echo '<div class="hentry"><h2>';
+		_e('We\'re sorry','a11yall');
+		echo '</h2><p>';
+		_e('You must be logged in to view this page.','a11yall');
+		echo '</p></div>';
 	} 
   ?>
   </div><!--.eleven.columns-->

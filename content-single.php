@@ -23,7 +23,8 @@
 		the_time('F j, Y');
 		_e('</time> by ','a11yall');
 		the_author_link(); 
-		_e('<br />Categories: ','a11yall');
+		echo '<br />';
+		_e('Categories: ','a11yall');
 		the_category(', '); 
 		echo '<br />';
 		the_tags();
