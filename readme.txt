@@ -71,4 +71,4 @@ This theme would not have been possible without the help of the following.  My g
 
 3. Thank you to my W3C EOWG friend, Wayne Dick, and his student, John Sweet, for their detailed accessibilty review of this theme in July 2014.
 
-4. And thank you to WordPress theme reviewer Pratik Shrestha who helped me bring this code into compliance. See: https://themes.trac.wordpress.org/ticket/20513
+4. And a big thank you to WordPress theme reviewers Pratik Shrestha and Joe Dolson who helped me bring this code into compliance with WordPress requirements, including the accessibility-ready tag. See: https://themes.trac.wordpress.org/ticket/20513
