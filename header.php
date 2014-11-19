@@ -49,7 +49,7 @@
 				'container_class' => 'container menus',
 				'container_id' => 'site-navigation',
 				'menu_class' => 'mdd-menu',
-				'fallback_cb'     => 'primary_menu_fallback',
+				'fallback_cb'     => 'a11yall_primary_menu_fallback',
 				'depth' => 2
 			) );
     ?>

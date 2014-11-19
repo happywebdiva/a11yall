@@ -136,7 +136,7 @@ function a11yall_themesetup() {
 } // End Theme Setup
 
 // For primary menu, create fallback with just 1 level depth for 
-function primary_menu_fallback() {
+function a11yall_primary_menu_fallback() {
 	echo '<div id="site-navigation" class="navfallback container menus" role="navigation"><ul id="menu-main-menu" class="mdd-menu">';
 	wp_list_pages(array(
 			'depth' => 1, 
@@ -146,18 +146,18 @@ function primary_menu_fallback() {
 }
 
 // Remove double spaces
-function remove_spaces($the_content) {
+function a11yall_remove_spaces($the_content) {
   return preg_replace( '/[\p{Z}\s]{2,}/u', ' ', $the_content );
 }
-add_filter('the_content', 'remove_spaces');
+add_filter('the_content', 'a11yall_remove_spaces');
 
 // Make so null search does not take user back to home page
-function my_request_filter( $query_vars ) {
+function a11yall_my_request_filter( $query_vars ) {
     if( isset( $_GET['s'] ) && empty( $_GET['s'] ) ) {
         $query_vars['s'] = " ";
     }
     return $query_vars;
 }
-add_filter( 'request', 'my_request_filter' );
+add_filter( 'request', 'a11yall_my_request_filter' );
 
 ?>
