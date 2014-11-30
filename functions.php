@@ -118,10 +118,28 @@ function a11yall_themesetup() {
 		'primary' => __( 'Main Menu', 'a11yall' ),
 		'secondary' => __( 'Footer Menu', 'a11yall' )
 	) );
+	
+	register_default_headers( array(
+		'wheel' => array(
+			'url'           => '%s/img/header.png',
+			'thumbnail_url' => '%s/img/header.png',
+			'description'   => __( 'Pinwheel', 'a11yall' )
+		),
+		'dancing-flower-aqua' => array(
+			'url'           => '%s/img/dancing-flower-aqua.png',
+			'thumbnail_url' => '%s/img/dancing-flower-aqua.png',
+			'description'   => __( 'Aqua Dancing Flower', 'a11yall' )
+		),
+		'dancing-flower-terracotta' => array(
+			'url'           => '%s/img/dancing-flower-terracotta.png',
+			'thumbnail_url' => '%s/img/dancing-flower-terracotta.png',
+			'description'   => __( 'Terra Dancing Flower', 'a11yall' )
+		)
+	) );
 
 	// Add custom header support
 	$header_defaults = array(
-		'default-image'          => get_template_directory_uri() . '/img/header.png',
+		'default-image'          => '',
 		'random-default'         => false,
 		'width'                  => 125,
 		'height'                 => 125,

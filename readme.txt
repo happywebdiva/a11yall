@@ -57,7 +57,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
    limitations under the License.
 Source: https://github.com/adobe-accessibility/Accessible-Mega-Menu/blob/master/LICENSE
 
-Header image, Copyright 2014 Anna Belle Leiserson
+Header images, Copyright 2014 Anna Belle Leiserson
 License: GNU General Public License v3 or later
 Source: http://www.a11yall.org/licensing-header-image/
 
