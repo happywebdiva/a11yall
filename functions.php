@@ -159,5 +159,3 @@ function a11yall_my_request_filter( $query_vars ) {
     return $query_vars;
 }
 add_filter( 'request', 'a11yall_my_request_filter' );
-
-?>
