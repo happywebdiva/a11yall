@@ -92,6 +92,7 @@ function a11yall_themesetup() {
 	// Styling the visual admin editor to resemble the theme style
 	add_editor_style( 'css/editor-style.css');
 	
+	global $content_width;
 	// Set oEmbed max width for things like videos
 	if ( ! isset( $content_width ) ) {
 		$content_width = 600; /* pixels */
