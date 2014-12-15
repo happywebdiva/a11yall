@@ -39,7 +39,7 @@ See http://www.a11yall.org/allyall-wordpress-theme/change-log/
 
 == Bundled Resource Copyright Attribution ==
 
-Modernizr, Copyright 2009–2014 Automattic
+Modernizr, Copyright 2009–2014 Faruk Ates, Paul Irish, Alex Sexton
 Modernizr is available under the MIT license
 Source: http://modernizr.com/license/
 

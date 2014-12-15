@@ -3,7 +3,7 @@
 function a11yall_scripts() {
 
 	// Add first jquery first as dependent script of modernizr (loaded in header), since modernizr requires jquery
-	wp_enqueue_script( 'a11yall-modernizr', get_template_directory_uri() . '/js/vendor/modernizr-2.6.2.min.js',array('jquery') );
+	wp_enqueue_script( 'a11yall-modernizr', get_template_directory_uri() . '/js/vendor/modernizr-2.8.3.min.js',array('jquery') );
 
 	// add plugins to footer
 	wp_enqueue_script( 'a11yall-plugins', get_template_directory_uri() . '/js/plugins.js', array(), '20141113', true );
