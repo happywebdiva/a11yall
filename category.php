@@ -39,10 +39,11 @@
       <hr />
     <?php endwhile; ?>
   <?php else : ?>
-    <h1>Not Found</h1>
-    <p>We're sorry.  The posts you were looking for could not be found.</p>
-    <p>Perhaps using the search form below would help? </p>
-    <?php get_search_form(); ?>
+    <h1><?php _e( 'Not Found', 'a11yall' );?></h1>
+    <div class="hentry">
+    <p><?php _e( 'We\'re sorry.  The posts you were looking for could not be found.', 'a11yall' ); ?></p> 
+    <p> <?php _e( 'Perhaps using the search form below would help?', 'a11yall' ); ?> </p>
+    <?php get_search_form(); ?> 
   <?php endif; ?>
   </div><!--.twelve.columns-->
 	<div class="four columns omega">
