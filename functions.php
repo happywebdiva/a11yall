@@ -115,7 +115,7 @@ function a11yall_themesetup() {
 	add_theme_support( 'post-thumbnails' ); 
 	
 	// Adding title tag theme support per https://make.wordpress.org/core/2014/10/29/title-tags-in-4-1/
-	// add_theme_support( 'title-tag' );
+	add_theme_support( 'title-tag' );
 
 	// Register menus
 	register_nav_menus( array(
