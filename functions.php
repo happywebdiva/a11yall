@@ -66,7 +66,7 @@ function a11yall_widgets_init() {
 	register_sidebar( array(
   	'name' => 'Sidebar Widgets',
     'id'   => 'sidebar-widgets',
-    'description'   => 'Drag widget for the sidebar here',
+    'description'   => __('Drag widget for the sidebar here','a11yall'),
     'before_widget' => '<aside id="%1$s" class="widget %2$s">',
     'after_widget'  => '</aside>',
     'before_title'  => '<h2>',
@@ -75,7 +75,7 @@ function a11yall_widgets_init() {
 	register_sidebar( array(
 		'name' => 'Page Sidebar',
 		'id' => 'page-widgets',
-		'description'   => 'Drag to create or update the sidebar for pages',
+		'description'   => __('Drag to create or update the sidebar for pages','a11yall'),
 		'before_widget' => '<aside class="widget %2$s">',
     'after_widget'  => '</aside>',
     'before_title'  => '<h2>',

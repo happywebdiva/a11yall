@@ -10,7 +10,7 @@
 <div class="sixteen columns" id="main">
   <div class="twelve columns alpha" role="main">
   <?php if ( have_posts() ) : ?>
-    <h1 id="page-title">Search Results for "<?php the_search_query(); ?>"</h1>
+    <h1 id="page-title"><?php _e('Search Results for ','a11yall'); ?>"<?php the_search_query(); ?>"</h1>
     <hr />
     <?php while ( have_posts() ) : the_post(); ?>
       <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
