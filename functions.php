@@ -46,21 +46,6 @@ function a11yall_paging_nav() {
 }
 endif;
 
-// Improve SEO on title tag in case don't use plugin 
-function a11yall_wp_title( $title ) {
-	global $page, $paged;
-	if ( is_feed() )
-		return $title;
-	if ( is_home() || is_front_page() ) {
-		$filtered_title = get_bloginfo( 'name' ) . ' - ' . get_bloginfo('description');
-	} else {
-		$filtered_title = $title . ' - ' . get_bloginfo( 'name' );
-		$filtered_title .= ( 2 <= $paged || 2 <= $page ) ? ' - ' . sprintf( __( 'Page %s', 'a11yall' ), max( $paged, $page ) ) : '';
-	}
-	return $filtered_title;
-}
-add_filter( 'wp_title', 'a11yall_wp_title' );
-
 // Set up a sidebar widger
 function a11yall_widgets_init() {
 	register_sidebar( array(
@@ -156,6 +141,23 @@ function a11yall_themesetup() {
 	add_theme_support( 'custom-header', $header_defaults );
 
 } // End Theme Setup
+
+// Improve SEO on title tag in case don't use plugin 
+// Note of Jan. 2015: with WP 4.1 addition of add_theme_support( 'title-tag' ), this no longer functions fully
+//     Holding to review once dust settles about this function
+/*function a11yall_wp_title( $title ) {
+	global $page, $paged;
+	if ( is_feed() )
+		return $title;
+	if ( is_home() || is_front_page() ) {
+		$filtered_title = get_bloginfo( 'name' ) . ' - ' . get_bloginfo('description');
+	} else {
+		$filtered_title = $title . ' - ' . get_bloginfo( 'name' );
+		$filtered_title .= ( 2 <= $paged || 2 <= $page ) ? ' - ' . sprintf( __( 'Page %s', 'a11yall' ), max( $paged, $page ) ) : '';
+	}
+	return $filtered_title;
+}
+add_filter( 'wp_title', 'a11yall_wp_title' );*/
 
 // For primary menu, create fallback with just 1 level depth for 
 function a11yall_primary_menu_fallback() {
