@@ -142,6 +142,14 @@ function a11yall_themesetup() {
 
 } // End Theme Setup
 
+// For WP versions older than 4.1 have a backup title tag
+if ( ! function_exists( '_wp_render_title_tag' ) ) :
+  function a11yall_render_title() {
+?><title><?php wp_title( '|', true, 'right' ); ?></title><?php
+  }
+  add_action( 'wp_head', 'a11yall_render_title' );
+endif;
+
 // Improve SEO on title tag in case don't use plugin 
 // Note of Jan. 2015: with WP 4.1 addition of add_theme_support( 'title-tag' ), this no longer functions fully
 //     Holding to review once dust settles about this function

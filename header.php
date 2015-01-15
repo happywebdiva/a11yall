@@ -7,15 +7,6 @@
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<?php	
-//wp_title(''); 
-if ( ! function_exists( '_wp_render_title_tag' ) ) :
-  function a11yall_render_title() {
-?><title><?php wp_title( '|', true, 'right' ); ?></title><?php
-  }
-  add_action( 'wp_head', 'a11yall_render_title' );
-endif;
-?>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--[if lte IE 7]><link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lt-ie8.css"><![endif]-->
 <?php wp_head(); ?>
