@@ -142,30 +142,47 @@ function a11yall_themesetup() {
 
 } // End Theme Setup
 
-// For WP versions older than 4.1 have a backup title tag
-if ( ! function_exists( '_wp_render_title_tag' ) ) :
-  function a11yall_render_title() {
-?><title><?php wp_title( '|', true, 'right' ); ?></title><?php
-  }
-  add_action( 'wp_head', 'a11yall_render_title' );
-endif;
-
-// Improve SEO on title tag in case don't use plugin 
-// Note of Jan. 2015: with WP 4.1 addition of add_theme_support( 'title-tag' ), this no longer functions fully
-//     Holding to review once dust settles about this function
-/*function a11yall_wp_title( $title ) {
-	global $page, $paged;
-	if ( is_feed() )
+// For WP versions older than 4.1 supply a title tag
+if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
+	/**
+	 * Filters wp_title to print a neat <title> tag based on what is being viewed.
+	 *
+	 * @param string $title Default title text for current view.
+	 * @param string $sep Optional separator.
+	 * @return string The filtered title.
+	 */
+	function a11yall_wp_title( $title, $sep ) {
+		if ( is_feed() ) {
+			return $title;
+		}
+		global $page, $paged;
+		// Add the blog name
+		$title .= get_bloginfo( 'name', 'display' );
+		// Add the blog description for the home/front page.
+		$site_description = get_bloginfo( 'description', 'display' );
+		if ( $site_description && ( is_home() || is_front_page() ) ) {
+			$title .= " $sep $site_description";
+		}
+		// Add a page number if necessary:
+		if ( ( $paged >= 2 || $page >= 2 ) && ! is_404() ) {
+			$title .= " $sep " . sprintf( __( 'Page %s', '_s' ), max( $paged, $page ) );
+		}
 		return $title;
-	if ( is_home() || is_front_page() ) {
-		$filtered_title = get_bloginfo( 'name' ) . ' - ' . get_bloginfo('description');
-	} else {
-		$filtered_title = $title . ' - ' . get_bloginfo( 'name' );
-		$filtered_title .= ( 2 <= $paged || 2 <= $page ) ? ' - ' . sprintf( __( 'Page %s', 'a11yall' ), max( $paged, $page ) ) : '';
 	}
-	return $filtered_title;
-}
-add_filter( 'wp_title', 'a11yall_wp_title' );*/
+	add_filter( 'wp_title', 'a11yall_wp_title', 10, 2 );
+	/**
+	 * Title shim for sites older than WordPress 4.1.
+	 *
+	 * @link https://make.wordpress.org/core/2014/10/29/title-tags-in-4-1/
+	 * @todo Remove this function when WordPress 4.3 is released.
+	 */
+	function a11yall_render_title() {
+		?>
+		<title><?php wp_title( '|', true, 'right' ); ?></title>
+		<?php
+	}
+	add_action( 'wp_head', 'a11yall_render_title' );
+endif;
 
 // For primary menu, create fallback with just 1 level depth for 
 function a11yall_primary_menu_fallback() {
