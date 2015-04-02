@@ -15,7 +15,7 @@
 <div class="section header">
   <header class="container" role="banner">
   	<div class="sixteen columns">
-        <a href="#main" class="visuallyhidden focusable" id="skiptomain">Skip to content</a>
+        <a href="#main" class="visuallyhidden focusable" id="skiptomain"><?php _e('Skip to content','a11yall'); ?></a>
         <?php 
 				if (get_header_image() != '') {
 					echo '<img src="';
