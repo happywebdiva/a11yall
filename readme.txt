@@ -6,7 +6,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 == Description ==
 
-The All Y'all Theme is a custom responsive WordPress starter theme, built from the ground up for accessibility and beauty. 
+The A11 Y'all Theme is a custom responsive WordPress starter theme, built from the ground up for accessibility and beauty. 
 
 It is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, Inc., and Adobe's Accessible Mega Menu (http://adobe-accessibility.github.io/Accessible-Mega-Menu/). 
 
@@ -36,6 +36,24 @@ Explore http://www.a11yall.org/ to see a typical basic installation
 == Change Log ==
 
 See http://www.a11yall.org/allyall-wordpress-theme/change-log/
+
+
+== A11 Y'all Copyright/License ==
+
+A11 Y'all WordPress Theme, Copyright 2014-15 Anna Belle Leiserson
+Ginger is distributed under the terms of the GNU GPL
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+For more information about GNU General Public License see http://www.gnu.org/licenses/gpl-3.0.html.
 
 == Bundled Resource Copyright Attribution ==
 
