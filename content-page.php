@@ -11,7 +11,7 @@
     <?php
       the_content();
 		  wp_link_pages( array(
-				'before' => '<p class="page-links">' . __( 'Pages: ' ),
+				'before' => '<p class="page-links">' . __( 'Pages: ', 'a11yall' ),
 				'after'  => '</p>',
 			) );
 		?>
