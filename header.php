@@ -29,13 +29,7 @@
 				?>       
         <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
         <p id="tagline"><?php bloginfo( 'description' ); ?></p>
-        <div id="main-search-box" role="search">
-        <form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
-          <label for="searchbox" class="visuallyhidden"><?php _e('Enter keywords to search:','a11yall'); ?></label>
-          <input type="text" value="<?php the_search_query(); ?>" name="s" id="searchbox" />
-          <input type="submit" id="searchsubmit" value="<?php _e('Search','a11yall'); ?>" />
-        </form>
-        </div>
+        <div id="main-search-box" role="search"><?php get_search_form(); ?></div>
     </div><!--.sixteen.columns-->
   </header>
 </div><!--.section-->

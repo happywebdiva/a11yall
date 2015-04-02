@@ -495,8 +495,8 @@ img#headerlogo {float: left; margin: 14px 20px 7px 10px;}
 margin: 0; padding: 0; color: #181818;font-weight: normal;
 margin-bottom: 14px; 
 font-size: 18px; letter-spacing: 0.01em; line-height: 21px; margin: 0 0 21px 10px;}
-.section.header form#searchform { position: absolute; right: 0; top: 0; width: 320px; margin: 0 10px; padding: 14px 0 0 0; background: #fff; /* fallback color */ background: rgba(0, 0, 0, 0.05); text-align: center; border-left: 1px solid #aaa; border-right: 1px solid #aaa; border-bottom: 1px solid #aaa;-webkit-border-bottom-right-radius: 5px;-webkit-border-bottom-left-radius: 5px;-moz-border-radius-bottomright: 5px;-moz-border-radius-bottomleft: 5px;border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; border-color: rgba(0,0,0,0.15);}
-.section.header form#searchform .button, .section.header form#searchform button, .section.header form#searchform input[type="submit"], .section.header form#searchform input[type="reset"], .section.header form#searchform input[type="button"] { margin-bottom: 14px; font-size: 12px;}
+.section.header #main-search-box form { position: absolute; right: 0; top: 0; width: 320px; margin: 0 10px; padding: 14px 0 0 0; background: #fff; /* fallback color */ background: rgba(0, 0, 0, 0.05); text-align: center; border-left: 1px solid #aaa; border-right: 1px solid #aaa; border-bottom: 1px solid #aaa;-webkit-border-bottom-right-radius: 5px;-webkit-border-bottom-left-radius: 5px;-moz-border-radius-bottomright: 5px;-moz-border-radius-bottomleft: 5px;border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; border-color: rgba(0,0,0,0.15);}
+.section.header #main-search-box form .button, .section.header #main-search-box form button, .section.header #main-search-box form input[type="submit"], .section.header #main-search-box form input[type="reset"], .section.header #main-search-box form input[type="button"] { margin-bottom: 14px; font-size: 12px;}
 .section.header input[type="text"] {width: 200px;max-width: none;display: inline; border: 1px solid #aaa; margin-right: 5px; border-color: rgba(0,0,0,0.3);}
 /* Navigation */
 nav select, div#site-navigation select {display: none;}
@@ -555,8 +555,9 @@ img.attachment-post-thumbnail { margin-bottom: 14px;}
 .nav-links .button { margin-right: 20px;}
 .nav-links a, .nav-links a:visited { text-decoration:none;}
 .nav-links a:hover, .nav-links a:focus { background: #222; color: #fff;}
-#search-box-404 { max-width: 320px; padding: 20px 20px 0 20px; background: #eee;}
-#search-box-404 input[type="text"] { display: inline-block; margin-right: 10px; border: 1px solid #aaa;}
+#search-box-404 { max-width: 320px; padding: 20px 20px 0 20px; background: #eee; border: 1px solid rgba(0,0,0,0.15);}
+#search-box-404 form {margin:0;}
+#search-box-404 input[type="text"] { display: inline-block; margin-right: 10px; border: 1px solid rgba(0,0,0,0.15);}
 /* Comments */
 #commentblock { margin: 28px 0 0 20px;}
 #commentblock .comment-body { padding: 10px 30px; border: 1px solid #ddd; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;border-color: rgba(0,0,0,0.15);}
@@ -624,9 +625,9 @@ a.comment-edit-link { margin: 0; padding: 7px 10px; background: #fff; border: 1p
 .mdd-menu .sub-nav { display: none;}
 .menu-item > a {padding: 11px 10px;}
 img#headerlogo { width:25%; margin-top: 77px;}
-.section.header h1 { font-size: 35px; line-height: 35px; margin: 77px 0 14px 0;}
+.section.header h1 { font-size: 35px; line-height: 35px; margin: 93px 0 14px 110px;}
 .section.header p#tagline { clear:both; margin: 0 14px 14px 14px; padding: 7px 14px; background: rgba(0, 0, 0, .05); text-align: center;}
-.section.header form#searchform { right:auto; left:0; margin:0; width: 100%; border: none;	}
+.section.header #main-search-box form { right:auto; left:0; margin:0; width: 100%; border: none;	}
 p#breadcrumbs { margin: -21px 0 21px 0; }
 .hentry {margin: 0 15px 14px 15px;}
 time.datehead { margin: 0 15px 14px 15px;}
@@ -647,6 +648,8 @@ p.postmetadata .commentlink { display:block; float: none;}
 }
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
+img#headerlogo { margin-top: 70px;}
+.section.header h1 { margin: 77px 0 14px 110px;}
 .section.header input[type="text"] {width: 190px;}
 .section.mainmenu { font-size: 14px; }
 }
