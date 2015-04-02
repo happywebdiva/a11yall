@@ -5,7 +5,7 @@
 ?><!doctype html>
 <html class="no-js" <?php language_attributes(); ?>>
 <head>
-<meta charset="UTF-8">
+<meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--[if lte IE 7]><link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lt-ie8.css"><![endif]-->
