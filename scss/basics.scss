@@ -1,0 +1,54 @@
+/*** 3. Basics (based on _s) ***/
+html {overflow-y: scroll;}
+body {background: #fff;}
+a {color: royalblue;}
+a:visited {color: purple;}
+a:hover,a:focus,a:active {color: #c00; text-decoration:none;}
+em {font-style: italic;}
+strong, b {font-weight: bold;}
+small {font-size: 80%;}
+sub,sup {font-size: 75%;line-height: 0;position: relative;vertical-align: baseline;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+acronym {font-style:italic;}
+address {margin-bottom: 1em;}
+cite {font-style:italic;}
+dfn {font-style: italic;}
+ins {font-style:italic; text-decoration: none;}
+mark {background: #fc6;color: #000;}
+code, pre { display: block; background: #eee;margin: 7px 0 21px 0;max-width: 100%;overflow: auto;padding: 14px 20px 14px 30px;}
+code, kbd, pre, samp, tt, var {font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;font-size: 1em;}
+pre {white-space: pre;white-space: pre-wrap;word-wrap: break-word;}
+img {height: auto; max-width: 100%;border: 0;-ms-interpolation-mode: bicubic; vertical-align: middle;}
+svg:not(:root) {overflow: hidden;}
+hr {display: block;height: 1px;border: 0;border-top: 1px solid #ccc;margin: 14px 0;padding: 0;}
+ul, ol { margin: 0; padding: 0 0 0 1em; }
+ul ul, ol ol, ul ol ol ul { padding: .5em 0 0 0; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+td {vertical-align: top;}
+textarea {width: 98%;}
+.alignleft {display: inline;float: left;margin-right: 1.5em;}
+.alignright {display: inline;float: right;margin-left: 1.5em;}
+.aligncenter {clear: both;display: block;margin: 0 auto;}
+.screen-reader-text {clip: rect(1px, 1px, 1px, 1px);position: absolute !important;}
+.screen-reader-text:hover,.screen-reader-text:active,.screen-reader-text:focus {background-color: #f1f1f1;border-radius: 3px;box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);clip: auto !important;color: #21759b;display: block;font-size: 14px;font-weight: bold;height: auto;left: 5px;line-height: normal;padding: 15px 23px 14px;text-decoration: none;top: 5px;width: auto;z-index: 100000;}
+.hentry {margin: 0 0 14px;}
+.byline,.updated {display: none;}
+.single .byline,.group-blog .byline {display: inline;}
+.page-links {clear: both;}
+.blog .format-aside .entry-title,.archive .format-aside .entry-title {display: none;}
+.page-content img.wp-smiley,.entry-content img.wp-smiley,.comment-content img.wp-smiley {border: none;	margin-bottom: 0;	margin-top: 0;	padding: 0;}
+.wp-caption {border: 1px solid #ccc;	margin-bottom: 14px;	max-width: 100%;}
+.wp-caption img[class*="wp-image-"] {display: block;	margin: 7px auto 0;	max-width: 98%;}
+.wp-caption-text {text-align: center;}
+.wp-caption .wp-caption-text {margin: 7px 0;}
+.gallery-caption {}
+.site-main .gallery {margin-bottom: 21px;}
+.site-main .gallery a img {border: none;	height: auto;	max-width: 90%;}
+.site-main .gallery dd {margin: 0;}
+embed,iframe,object {max-width: 100%;}
+.comment-content a {word-wrap: break-word;}
+.widget select {max-width: 100%;}
+.infinite-scroll .paging-navigation,.infinite-scroll.neverending .site-footer {display: none;}
+.infinity-end.neverending .site-footer {display: block;}
+.site-footer {clear: both;width: 100%;}

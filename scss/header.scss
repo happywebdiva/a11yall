@@ -1,0 +1,40 @@
+/*
+Theme Name: A11Y'all
+Theme URI: http://www.a11yall.org/allyall-wordpress-theme/
+Author: Anna Belle Leiserson
+Author URI: http: //www.happywebdiva.com/
+Description: A custom responsive HTML5 WordPress starter theme, built from the ground up for accessibility (as part of of the Cities suite), SEO, simplicity, and elegance. It includes page templates and customizable menus, header image, widgets and background. 
+Version: 1.9.0
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: a11yall
+Domain Path: /languages/
+Tags: accessibility-ready, light, responsive-layout, custom-background, custom-header, custom-menu, featured-images, flexible-header, sticky-post, theme-options, translation-ready
+
+The A11 Y'all Theme is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, Inc., normalize.css v2.1.3, and Adobe's Accessible Mega Menu (http://adobe-accessibility.github.io/Accessible-Mega-Menu/). 
+
+It is designed to be a parent theme, making it easy to spread accessibility-ready child themes (http://www.a11yall.org/child-themes/).
+
+It supports the use of Yoast's SEO plugin (http://wordpress.org/plugins/wordpress-seo/) including his use of breadcrumb trails. 
+
+Currently it has five page templates:
+     1. Private Page Template (useful for "member-only" sections of the site)
+		 2. Page Without Title Template (useful for some landing pages)
+		 3. Page Without Sidebar Template
+		 4. Page Without Sidebar or Title Template (useful for some landing pages)
+		 5. Site Map Template (a simple alternative if you don't want to hand-build a site map for your site)
+
+Note that on small screens only the first and last menu items appear; consider making one of these "Site Map."  On large screens the menu levels are limited to two for accessibility reasons.
+
+CONTENTS BELOW
+
+1. Reset cross broswer 
+2. H5BP adjustments  
+3. CSS basics (a, strong, hr, etc.)
+4. Basic styling (fonts, vertical spacing between elements, etc.)
+5. Layout of columns, plus clearing
+6. Custom a11yall styling (backgrounds, block styling like nav & footer structure, WP-specific, etc.)
+7. Custom edia queries, including print
+
+*/
+
