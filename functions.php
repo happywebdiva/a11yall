@@ -208,3 +208,27 @@ function a11yall_my_request_filter( $query_vars ) {
     return $query_vars;
 }
 add_filter( 'request', 'a11yall_my_request_filter' );
+
+
+// No Sidebar Option 
+// Makes it possible to have posts that have no sidebar; 
+// Requires use of a custom field called NoSidebar that is set to true
+function load_single_template($template) {
+  $new_template = '';
+
+  // single post template
+  if( is_single() ) {
+    global $post;
+
+    //if post has a custom field called disableSidebar and it's set to true:
+    $disableSidebar = get_post_meta($post->ID, 'NoSidebar', $single = true);
+    if ($disableSidebar == 'true') { 
+      // use template file single-template-cat-1.php
+      $new_template = locate_template(array('post-nosidebar.php' ));
+    }
+
+  }
+  return ('' != $new_template) ? $new_template : $template;
+}
+add_action('template_include', 'load_single_template');
+
