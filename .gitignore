@@ -6,5 +6,6 @@
 # Theme author to do list
 abl-allyall-readme.txt
 
-# SCSS cache
+# Other
 scss/.sass-cache/**
+config.codekit
